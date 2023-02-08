@@ -1,0 +1,127 @@
+@media (max-width: 992px) {
+  .card {
+    width: 10rem;
+  }
+
+  .carousel {
+    height: 300px;
+  }
+
+  /* .nav-logo {
+    margin-left: 35px;
+    width: 10px;
+    height: 100px;
+  } */
+
+  .offcanvas {
+    width: 90%;
+  }
+
+  .nav-image {
+    width: 90px;
+    border-radius: 50%;
+  }
+  /* 
+  .shopping-cart {
+    background-color: #171717;
+    margin-left: 30%;
+    width: 115px;
+    height: 40px;
+  } */
+
+  .nav-cart-toggle {
+    margin-right: 10%;
+  }
+
+  .logo-outline {
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
+    margin-bottom: 5%;
+    border-radius: 50%;
+    margin-left: 60%;
+    background-color: #171717;
+    box-shadow: -8px -10px 15px rgb(255, 255, 255, 0.1),
+      15px 15px 15px rgb(0, 0, 0, 0.1),
+      inset -1px -5px 5px rgb(255, 255, 255, 0.1),
+      inset 5px 5px 5px rgb(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    width: 70px;
+    margin-left: 5%;
+  }
+
+  .item-page-outline {
+    width: 100%;
+    height: 650px;
+    background-color: #171717;
+    box-shadow: inset -5px -5px 5px rgb(0, 0, 0, 0.2),
+      inset 5px 5px 5px rgb(0, 0, 0, 0.2);
+  }
+
+  .item-row {
+    text-align: center;
+  }
+
+  .item-image {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1860px) {
+  .carousel {
+    height: 1000px;
+  }
+
+  .logo-outline {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 60%;
+    background-color: #171717;
+    box-shadow: -8px -10px 15px rgb(255, 255, 255, 0.1),
+      15px 15px 15px rgb(0, 0, 0, 0.3),
+      inset -1px -5px 5px rgb(255, 255, 255, 0.1),
+      inset 5px 5px 5px rgb(0, 0, 0, 0.3);
+  }
+
+  .shopping-cart {
+    margin-left: 900px;
+  }
+
+  .nav-image {
+    width: 150px;
+    margin-left: 50%;
+    border-radius: 50%;
+  }
+
+  .logo {
+    width: 140px;
+    margin-left: 3%;
+  }
+
+  .home-link:hover {
+    border-radius: 30px;
+    box-shadow: 1px 15px 5px black;
+  }
+
+  .item-page-outline {
+    width: 1300px;
+    height: 580px;
+    background-color: #171717;
+    box-shadow: -8px -10px 15px rgb(255, 255, 255, 0.1),
+      15px 15px 15px rgb(0, 0, 0, 0.5),
+      inset -1px -5px 5px rgb(255, 255, 255, 0.1),
+      inset 5px 5px 5px rgb(0, 0, 0, 0.4);
+  }
+  .item-page-border-right {
+    border-right: solid #121212;
+  }
+
+  .item-image {
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 8%;
+  }
+}
