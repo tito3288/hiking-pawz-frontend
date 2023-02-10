@@ -1,6 +1,6 @@
 const productArray = [
   {
-    id: "1",
+    id: "price_1M0C3vL8hk1dUwiAxouMZOjt",
     img: "testCollar3.jpeg",
     title: "Collar 1",
     price: 19.99,

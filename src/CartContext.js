@@ -6,6 +6,7 @@ export const CartContext = createContext({
   getProductQuantity: () => {},
   addOneToCart: () => {},
   removeOneFromCart: () => {},
+  addXAmountToCart: () => {},
   deleteFromCart: () => {},
   getTotalCost: () => {},
 });
@@ -47,6 +48,46 @@ export function CartProvider({ children }) {
           (product) =>
             product.id === id // if condition
               ? { ...product, quantity: product.quantity + 1 } // if statement is true
+              : product // if statement is false
+        )
+      );
+    }
+  }
+
+  function addXAmountToCart(id, num) {
+    const quantity = getProductQuantity(id);
+
+    if (quantity === 0) {
+      setCartProducts([
+        ...cartProducts,
+        {
+          id: id,
+          quantity: num,
+        },
+      ]);
+    } else {
+      setCartProducts(
+        cartProducts.map(
+          (product) =>
+            product.id === id // if condition
+              ? { ...product, quantity: product.quantity + num } // if statement is true
+              : product // if statement is false
+        )
+      );
+    }
+  }
+
+  function subtractXAmountToCart(id, num) {
+    const quantity = getProductQuantity(id);
+
+    if (quantity === 1) {
+      deleteFromCart(id);
+    } else {
+      setCartProducts(
+        cartProducts.map(
+          (product) =>
+            product.id === id // if condition
+              ? { ...product, quantity: product.quantity + num } // if statement is true
               : product // if statement is false
         )
       );
@@ -95,6 +136,7 @@ export function CartProvider({ children }) {
     getProductQuantity,
     addOneToCart,
     removeOneFromCart,
+    addXAmountToCart,
     deleteFromCart,
     getTotalCost,
   };

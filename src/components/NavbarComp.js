@@ -25,15 +25,28 @@ const NavbarComp = () => {
     return sum + value.quantity;
   }, 0);
 
+  const checkout = async () => {
+    await fetch("http://localhost:4000/checkout", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({ items: cart.items }),
+    })
+      .then((response) => {
+        return response.json();
+      })
+      .then((response) => {
+        if (response.url) {
+          window.location.assign(response.url);
+        }
+      });
+  };
+
   return (
     <div style={{ backgroundColor: "#171717" }}>
       <Navbar expand="sm">
         <Navbar.Brand href="/" className="nav-logo">
-          {/* <img
-            className="nav-image"
-            src="logo.png"
-            alt="hiking-pawz-logo"
-          ></img> */}
           <div className="logo-outline">
             <img src="transparant-logo.png" className="logo" alt="logo"></img>
           </div>
@@ -139,7 +152,9 @@ const NavbarComp = () => {
               ))}
               <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
 
-              <Button variant="success">Purchase items!</Button>
+              <Button onClick={checkout} variant="success">
+                Checkout
+              </Button>
             </>
           ) : (
             <h1>Your Cart Is Empty</h1>

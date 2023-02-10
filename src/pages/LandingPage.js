@@ -2,7 +2,6 @@ import React from "react";
 import ProductComp from "../components/ProductComp";
 import NavbarComp from "../components/NavbarComp";
 import CarouselComp from "../components/CarouselComp";
-import ThemeProvider from "react-bootstrap/ThemeProvider";
 
 const LandingPage = () => {
   return (

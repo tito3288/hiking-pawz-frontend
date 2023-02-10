@@ -1,20 +1,41 @@
 import React from "react";
-import { Row, Col, Stack, Dropdown, Button, Container } from "react-bootstrap";
+import {
+  Row,
+  Col,
+  Stack,
+  Dropdown,
+  Button,
+  Container,
+  Form,
+} from "react-bootstrap";
 import "./Page.css";
 import { getProductData } from "../productArray";
 import { CartContext } from "../CartContext";
 import { useContext } from "react";
+import "./Page.css";
 
 const ItemComp = (props) => {
   const productData = getProductData(props.id);
   const cart = useContext(CartContext);
 
+  const [numInCart, numInCartFunc] = React.useState(1);
+
+  function handleSubtractFromCart() {
+    if (numInCart <= 0) {
+      numInCart = 0;
+    } else {
+      numInCartFunc(numInCart - 1);
+    }
+  }
+
+  function handleAddToCart() {
+    cart.addXAmountToCart(props.id, numInCart);
+    numInCartFunc(0);
+  }
+
   return (
     <Container>
-      <div
-        style={{ backgroundColor: "#171717", paddingBottom: "90px" }}
-        className="item-page-outline"
-      >
+      <div className="item-page-outline">
         <Row
           className="item-row"
           style={{
@@ -36,11 +57,11 @@ const ItemComp = (props) => {
           </Col>
           <Col style={{ marginTop: "6%", color: "white" }}>
             <Stack gap={3}>
-              <h1>{productData.title}</h1>
-              <h4>${productData.price}</h4>
-              <p>Free Domestic Shipping</p>
+              <h1 className="collar-title">{productData.title}</h1>
+              <h4 className="price-title">${productData.price}</h4>
+              <p className="shipping-title">Free Domestic Shipping</p>
               <hr />
-              <h3>SIZE</h3>
+              <h5 className="size-title">SIZE</h5>
               <Dropdown>
                 <Dropdown.Toggle id="dropdown-basic">Sizes</Dropdown.Toggle>
 
@@ -50,8 +71,22 @@ const ItemComp = (props) => {
                   <Dropdown.Item>Small</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
+              <h5 className="quantity-title">QUANTITY</h5>
+              <div className="wrapper">
+                <span onClick={handleSubtractFromCart} className="minus">
+                  -
+                </span>
+                <span className="num">{numInCart}</span>
+                <span
+                  onClick={() => numInCartFunc(numInCart + 1)}
+                  className="plus"
+                >
+                  +
+                </span>
+              </div>
+
               <Button
-                onClick={() => cart.addOneToCart(props.id)}
+                onClick={handleAddToCart}
                 variant="primary"
                 style={{
                   backgroundColor: "#6B011F",
