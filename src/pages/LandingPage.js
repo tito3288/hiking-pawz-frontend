@@ -2,6 +2,7 @@ import React from "react";
 import ProductComp from "../components/ProductComp";
 import NavbarComp from "../components/NavbarComp";
 import CarouselComp from "../components/CarouselComp";
+import FooterPage from "../components/FooterPage";
 
 const LandingPage = () => {
   return (
@@ -16,6 +17,7 @@ const LandingPage = () => {
         <NavbarComp />
         <CarouselComp />
         <ProductComp />
+        <FooterPage></FooterPage>
       </div>
     </div>
   );

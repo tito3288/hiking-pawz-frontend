@@ -12,6 +12,7 @@ import "./Page.css";
 import { getProductData } from "../productArray";
 import { CartContext } from "../CartContext";
 import { useContext } from "react";
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import "./Page.css";
 
 const ItemComp = (props) => {
@@ -59,7 +60,10 @@ const ItemComp = (props) => {
             <Stack gap={3}>
               <h1 className="collar-title">{productData.title}</h1>
               <h4 className="price-title">${productData.price}</h4>
-              <p className="shipping-title">Free Domestic Shipping</p>
+              <p className="shipping-title">
+                <LocalShippingIcon className="shipping-car" /> Free Domestic
+                Shipping
+              </p>
               <hr />
               <h5 className="size-title">SIZE</h5>
               <Dropdown>
@@ -91,6 +95,9 @@ const ItemComp = (props) => {
                 style={{
                   backgroundColor: "#6B011F",
                   border: "none",
+                  opacity: "0.8",
+                  fontSize: "20px",
+                  fontFamily: "Amatic SC, cursive",
                 }}
               >
                 Add To Cart

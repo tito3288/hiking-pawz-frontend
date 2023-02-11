@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Page1 from "./pages/productPages/Page1";
 import CartProvider from "./CartContext";
 import Page2 from "./pages/productPages/Page2";
-import NavbarComp from "./components/NavbarComp";
 
 function App() {
   return (

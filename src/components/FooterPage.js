@@ -5,8 +5,8 @@ const FooterPage = () => {
   const year = new Date().getFullYear();
 
   return (
-    <div style={{ height: "80px", backgroundColor: "#121212" }}>
-      <h6 style={{ textAlign: "center" }}>© {year} Hiking Pawz</h6>
+    <div className="footer">
+      <h6 className="footer-content">© {year} Hiking Pawz</h6>
     </div>
   );
 };

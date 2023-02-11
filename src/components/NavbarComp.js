@@ -14,6 +14,7 @@ import { CartContext } from "../CartContext";
 import { useContext } from "react";
 import ModalCartComp from "./ModalCartComp";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
+import SearchIcon from "@mui/icons-material/Search";
 import "./Page.css";
 
 const NavbarComp = () => {
@@ -58,6 +59,7 @@ const NavbarComp = () => {
               backgroundColor: "#171717",
               color: "#6B011F",
               border: "none",
+              opacity: "0.8",
             }}
             onClick={() => showFunc(true)}
           >
@@ -84,21 +86,21 @@ const NavbarComp = () => {
             ></OffcanvasTitle>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav
-              style={{ color: "white" }}
-              // className="justify-content-end flex-grow-1 pe-3"
-            >
+            <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link
                 className="home-link"
-                style={{ color: "#6B011F" }}
+                style={{ color: "#6B011F", opacity: "0.8" }}
                 href="#action1"
               >
                 Home
               </Nav.Link>
-              <Nav.Link style={{ color: "#6B011F" }} href="#action2">
+              <Nav.Link
+                style={{ color: "#6B011F", opacity: "0.8" }}
+                href="#action2"
+              >
                 Link
               </Nav.Link>
-              <NavDropdown
+              {/* <NavDropdown
                 style={{ color: "#6B011F" }}
                 title="Dropdown"
                 id={`offcanvasNavbarDropdown-expand-md`}
@@ -111,7 +113,7 @@ const NavbarComp = () => {
                 <NavDropdown.Item href="#action5">
                   Something else here
                 </NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown> */}
             </Nav>
             <Form className="d-flex">
               <Form.Control
@@ -125,9 +127,10 @@ const NavbarComp = () => {
                   backgroundColor: "#121212",
                   border: "none",
                   color: "#6B011F",
+                  opacity: "0.8",
                 }}
               >
-                Search
+                <SearchIcon />
               </Button>
             </Form>
           </Offcanvas.Body>
@@ -150,7 +153,7 @@ const NavbarComp = () => {
                   quantity={currentProduct.quantity}
                 ></ModalCartComp>
               ))}
-              <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
+              <h1>Total: ${cart.getTotalCost().toFixed(2)}</h1>
 
               <Button onClick={checkout} variant="success">
                 Checkout

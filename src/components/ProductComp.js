@@ -1,7 +1,7 @@
 import React from "react";
 import CardComp from "./CardComp";
 import { productArray } from "../productArray";
-import { Row, Col, Container, ThemeProvider } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 
 const ProductComp = () => {
   return (
