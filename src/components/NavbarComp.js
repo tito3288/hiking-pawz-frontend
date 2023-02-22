@@ -94,46 +94,29 @@ const NavbarComp = () => {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link
-                className="home-link"
-                style={{
-                  color: "#6B011F",
-                  opacity: "0.8",
-                  border: "solid 2px",
-                  marginRight: "10px",
-                  fontWeight: "bold",
-                }}
-                href="AboutUs"
-              >
-                About Us
+              <Nav.Link href="AboutUs">
+                <p className="home-link">About Us</p>
               </Nav.Link>
-              <Nav.Link
-                className="home-link"
-                style={{
-                  color: "#6B011F",
-                  opacity: "0.8",
-                  border: "solid 2px",
-                  fontWeight: "bold",
-                }}
-                href="Contact-Us"
-              >
-                Contact Us
+              <Nav.Link href="Contact-Us">
+                <p className="home-link">Contact Us</p>
               </Nav.Link>
             </Nav>
             <Form className="d-flex">
               <Form.Control
+                style={{ margin: "auto auto" }}
                 type="search"
                 placeholder="Search"
                 className="me-2"
                 aria-label="Search"
               />
               <Button
-                className="home-link"
                 style={{
                   backgroundColor: "#121212",
                   border: "none",
                   color: "#6B011F",
                   opacity: "0.8",
+                  margin: "auto auto",
+                  boxShadow: "5px 10px 5px rgb(0, 0, 0, 0.5)",
                 }}
               >
                 <SearchIcon />

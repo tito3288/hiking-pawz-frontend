@@ -5,25 +5,22 @@ const MissionCom = () => {
   return (
     //this container element looks great on mobile but not so much on desktop view, check before deployment.
     <Container>
-      <Row
-        className="g-9 mb-5"
-        style={{
-          marginTop: "40px",
-          marginLeft: "10px",
-          marginRight: "10px",
-        }}
-      >
-        <Col lg={6} md={6}>
+      <Row lg={2} md={2} sm={1} xs={1} className="mb-5 my-5 mission-container">
+        <Col className="mb-4">
           <div className="missionDesBackground">
-            <h1>Dark Title</h1>
             <img
-              style={{ margin: "auto auto" }}
-              src=""
+              className="mission-image1"
+              src="https://newscdn2.weigelbroadcasting.com/kpTfu-1670280235-242945-blog-Humane-society-st-joseph-county.jpg"
               alt="Image of human society "
             ></img>
+            <img
+              className="my-3 mission-image2"
+              src="https://www.gannett-cdn.com/presto/2021/08/20/NSBT/f7014ae3-1388-4aa2-9577-20e6f4a2dc1c-riverdog08202021_03.jpg"
+              alt="another-humansociety-img"
+            />
           </div>
         </Col>
-        <Col lg={6} md={6}>
+        <Col className="mb-4">
           <div className="missionDesMaroon">
             <h1>Maroon Title</h1>
             <p>

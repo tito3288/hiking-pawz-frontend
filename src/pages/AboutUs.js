@@ -2,40 +2,28 @@ import React from "react";
 import NavbarComp from "../components/NavbarComp";
 import FooterPage from "../components/FooterPage";
 import { Stack, Container } from "react-bootstrap";
+import "../Links.css";
 
 const AboutUs = () => {
   //Move all of the styling on the css page
 
   return (
-    <div>
+    <div className="flex-wrapper">
       <NavbarComp />
-      <div
-        className="aboutus-section"
-        style={{
-          display: "flex",
-          paddingBottom: "10%",
-        }}
-      >
-        <Container style={{ textAlign: "center" }}>
+      <div className="aboutus-section">
+        <Container className="aboutus-container">
           <Stack>
             <h1
               style={{
                 color: "black",
                 marginTop: "20%",
+                padding: "10px 10px",
               }}
             >
               About Us
             </h1>
-            <img
-              src="about-us.jpg"
-              alt="about-us"
-              className="aboutus-img"
-              style={{ width: "60%", margin: "auto auto" }}
-            />
-            <h4
-              className="aboutus-text"
-              style={{ color: "black", marginTop: "30px" }}
-            >
+            <img src="about-us.jpg" alt="about-us" className="aboutus-img" />
+            <h4 className="aboutus-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris

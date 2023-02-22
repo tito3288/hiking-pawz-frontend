@@ -8,7 +8,11 @@ const ProductDesc = () => {
       <Row>
         <Col style={{ height: "100%" }}>
           <div className="productDescriptionSection">
-            <img style={{ margin: "auto auto" }} src="" alt="Cool collar pic" />
+            <img
+              className="productDescriptionSection-img"
+              src="product-description.jpg"
+              alt="Cool collar pic"
+            />
           </div>
         </Col>
       </Row>

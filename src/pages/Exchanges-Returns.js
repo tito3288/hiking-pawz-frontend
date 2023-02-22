@@ -1,63 +1,40 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
+import "../Links.css";
 
 const ExchangesReturns = () => {
   return (
     <div>
-      <Button
-        href="/"
-        style={{ margin: "1% 1%", backgroundColor: "gray", border: "none" }}
-      >
+      <Button href="/" className="backto-store-button">
         Back To Store
       </Button>
       <div className="exchange-logo-outline">
-        <img src="transparant-logo.png" alt="logo" style={{ width: "250px" }} />
+        <img className="exch-logo" src="transparant-logo.png" alt="logo" />
       </div>
       <Form
         //Move all of this CSS to the CSS file
-        style={{
-          width: "50%",
-          margin: "auto auto",
-          border: "solid white",
-          boxShadow: "0px 0px 25px rgb(0,0,0,0.3)",
-          borderRadius: "20px",
-          padding: "20px 20px",
-          height: "600px",
-          marginTop: "40px",
-          marginBottom: "10%",
-          display: "flex",
-        }}
+        className="exch-form"
       >
-        <div style={{ margin: "15% auto", width: "80%" }}>
-          <h1 style={{ textAlign: "center", marginBottom: "50px" }}>
-            Exchanges & Returns
+        <div className="exchform-content">
+          <h1 className="form-header">
+            Exchanges <br /> & Returns
           </h1>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Control
-              style={{ height: "70px" }}
+              className="exch-textfield"
               type="email"
               placeholder="Order Number"
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Control
-              style={{ height: "70px" }}
+              className="exch-textfield"
               type="password"
               placeholder="Shipping Zip Code or Email"
             />
           </Form.Group>
 
-          <Button
-            style={{
-              margin: "auto 30%",
-              width: "50%",
-              backgroundColor: "gray",
-              border: "none",
-              height: "50px",
-            }}
-            variant="primary"
-            type="submit"
-          >
+          <Button className="return-button" variant="primary" type="submit">
             Start Return
           </Button>
         </div>

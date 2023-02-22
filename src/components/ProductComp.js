@@ -9,7 +9,7 @@ const ProductComp = () => {
       <Row xs={2} sm={1} md={3} lg={3}>
         {productArray.map((value, index) => {
           return (
-            <Col key={index} align="center" className="g-4">
+            <Col key={index} align="center" className="g-3">
               <CardComp
                 title={value.title}
                 price={value.price}
