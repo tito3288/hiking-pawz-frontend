@@ -12,7 +12,8 @@ const ModalCartComp = (props) => {
     <div>
       <h4>{productData.title}</h4>
       <p>{props.quantity} total</p>
-      <p>${(props.quantity * productData.price).toFixed(2)}</p>
+      <p>{props.size}</p>
+      <p>${productData.price.toFixed(2)}</p>
       <Button
         size="sm"
         variant="danger"

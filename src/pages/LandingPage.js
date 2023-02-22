@@ -3,6 +3,9 @@ import ProductComp from "../components/ProductComp";
 import NavbarComp from "../components/NavbarComp";
 import CarouselComp from "../components/CarouselComp";
 import FooterPage from "../components/FooterPage";
+import ProductDesc from "../components/ProductDesc";
+import MissionCom from "../components/MissionCom";
+import SubscriptionComp from "../components/SubscriptionComp";
 
 const LandingPage = () => {
   return (
@@ -16,7 +19,10 @@ const LandingPage = () => {
       >
         <NavbarComp />
         <CarouselComp />
+        <MissionCom />
+        <ProductDesc />
         <ProductComp />
+        <SubscriptionComp />
         <FooterPage></FooterPage>
       </div>
     </div>

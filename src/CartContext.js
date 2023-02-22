@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { productsArray, getProductData } from "./productArray";
+import { getProductData } from "./productArray";
 
 export const CartContext = createContext({
   items: [],
@@ -77,22 +77,22 @@ export function CartProvider({ children }) {
     }
   }
 
-  function subtractXAmountToCart(id, num) {
-    const quantity = getProductQuantity(id);
+  // function subtractXAmountToCart(id, num) {
+  //   const quantity = getProductQuantity(id);
 
-    if (quantity === 1) {
-      deleteFromCart(id);
-    } else {
-      setCartProducts(
-        cartProducts.map(
-          (product) =>
-            product.id === id // if condition
-              ? { ...product, quantity: product.quantity + num } // if statement is true
-              : product // if statement is false
-        )
-      );
-    }
-  }
+  //   if (quantity === 1) {
+  //     deleteFromCart(id);
+  //   } else {
+  //     setCartProducts(
+  //       cartProducts.map(
+  //         (product) =>
+  //           product.id === id // if condition
+  //             ? { ...product, quantity: product.quantity + num } // if statement is true
+  //             : product // if statement is false
+  //       )
+  //     );
+  //   }
+  // }
 
   function removeOneFromCart(id) {
     const quantity = getProductQuantity(id);

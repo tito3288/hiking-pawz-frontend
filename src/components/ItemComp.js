@@ -1,19 +1,10 @@
 import React from "react";
-import {
-  Row,
-  Col,
-  Stack,
-  Dropdown,
-  Button,
-  Container,
-  Form,
-} from "react-bootstrap";
+import { Row, Col, Stack, Button, Container } from "react-bootstrap";
 import "./Page.css";
 import { getProductData } from "../productArray";
 import { CartContext } from "../CartContext";
 import { useContext } from "react";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
-import "./Page.css";
 
 const ItemComp = (props) => {
   const productData = getProductData(props.id);
@@ -35,28 +26,19 @@ const ItemComp = (props) => {
   }
 
   return (
-    <Container>
+    <Container style={{ display: "flex" }}>
       <div className="item-page-outline">
-        <Row
-          className="item-row"
-          style={{
-            marginTop: "8%",
-            padding: "20px 20px",
-          }}
-          xs={1}
-          sm={2}
-          md={2}
-          lg={2}
-        >
+        <Row className="item-row" xs={1} sm={2} md={2} lg={2}>
           <Col className="item-page-border-right">
             <img
               className="item-image"
-              // style={{ width: "80%", marginTop: "10%", marginLeft: "8%" }}
               src="testCollar3.jpeg"
               alt="collar"
             ></img>
           </Col>
-          <Col style={{ marginTop: "6%", color: "white" }}>
+          <Col
+            style={{ marginTop: "6%", color: "white", padding: "30px 30px" }}
+          >
             <Stack gap={3}>
               <h1 className="collar-title">{productData.title}</h1>
               <h4 className="price-title">${productData.price}</h4>
@@ -66,15 +48,14 @@ const ItemComp = (props) => {
               </p>
               <hr />
               <h5 className="size-title">SIZE</h5>
-              <Dropdown>
-                <Dropdown.Toggle id="dropdown-basic">Sizes</Dropdown.Toggle>
+              <h5>Select Size At Checkout</h5>
 
-                <Dropdown.Menu>
-                  <Dropdown.Item>Large</Dropdown.Item>
-                  <Dropdown.Item>Medium</Dropdown.Item>
-                  <Dropdown.Item>Small</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
+              <ul>
+                <li>Large (1-inch Width 18-26-inch Length)</li>
+                <li>Medium (1-inch Width 12-18-inch Length)</li>
+                <li>Small (5/8-inch Width 8-12-Length)</li>
+              </ul>
+
               <h5 className="quantity-title">QUANTITY</h5>
               <div className="wrapper">
                 <span onClick={handleSubtractFromCart} className="minus">
@@ -93,7 +74,7 @@ const ItemComp = (props) => {
                 onClick={handleAddToCart}
                 variant="primary"
                 style={{
-                  backgroundColor: "#6B011F",
+                  backgroundColor: "#6a0000",
                   border: "none",
                   opacity: "0.8",
                   fontSize: "20px",

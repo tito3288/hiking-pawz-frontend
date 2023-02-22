@@ -1,9 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Page1 from "./pages/productPages/Page1";
+import ItemPage from "./pages/ItemPage";
 import CartProvider from "./CartContext";
-import Page2 from "./pages/productPages/Page2";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/Contact-Us";
+import ExchangesReturns from "./pages/Exchanges-Returns";
 
 function App() {
   return (
@@ -11,8 +13,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<LandingPage />} />
-          <Route path="Page1" element={<Page1 />} />
-          <Route path="Page2" element={<Page2 />} />
+          <Route path="ItemPage" element={<ItemPage />} />
+          <Route path="AboutUs" element={<AboutUs />} />
+          <Route path="Contact-Us" element={<ContactUs />} />
+          <Route path="Exchanges-Returns" element={<ExchangesReturns />} />
         </Routes>
       </BrowserRouter>
     </CartProvider>

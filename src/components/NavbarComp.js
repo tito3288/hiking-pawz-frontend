@@ -6,7 +6,6 @@ import {
   Nav,
   Offcanvas,
   OffcanvasTitle,
-  NavDropdown,
   Form,
   Stack,
 } from "react-bootstrap";
@@ -45,20 +44,28 @@ const NavbarComp = () => {
   };
 
   return (
-    <div style={{ backgroundColor: "#171717" }}>
+    <div
+      style={{
+        backgroundColor: "#171717",
+        position: "fixed",
+        zIndex: "200",
+        width: "100%",
+      }}
+    >
       <Navbar expand="sm">
-        <Navbar.Brand href="/" className="nav-logo">
+        <Navbar.Brand href="/">
           <div className="logo-outline">
             <img src="transparant-logo.png" className="logo" alt="logo"></img>
           </div>
         </Navbar.Brand>
-        <Stack direction="horizontal" gap={1} className="nav-cart-toggle">
+        <Stack direction="horizontal" className="nav-cart-toggle">
           <Button
             className="shopping-cart"
             style={{
               backgroundColor: "#171717",
               color: "#6B011F",
               border: "none",
+              boxShadow: "1px 10px 15px rgb(0,0,0,0.8)",
               opacity: "0.8",
             }}
             onClick={() => showFunc(true)}
@@ -89,31 +96,29 @@ const NavbarComp = () => {
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link
                 className="home-link"
-                style={{ color: "#6B011F", opacity: "0.8" }}
-                href="#action1"
+                style={{
+                  color: "#6B011F",
+                  opacity: "0.8",
+                  border: "solid 2px",
+                  marginRight: "10px",
+                  fontWeight: "bold",
+                }}
+                href="AboutUs"
               >
-                Home
+                About Us
               </Nav.Link>
               <Nav.Link
-                style={{ color: "#6B011F", opacity: "0.8" }}
-                href="#action2"
+                className="home-link"
+                style={{
+                  color: "#6B011F",
+                  opacity: "0.8",
+                  border: "solid 2px",
+                  fontWeight: "bold",
+                }}
+                href="Contact-Us"
               >
-                Link
+                Contact Us
               </Nav.Link>
-              {/* <NavDropdown
-                style={{ color: "#6B011F" }}
-                title="Dropdown"
-                id={`offcanvasNavbarDropdown-expand-md`}
-              >
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
-              </NavDropdown> */}
             </Nav>
             <Form className="d-flex">
               <Form.Control
@@ -123,6 +128,7 @@ const NavbarComp = () => {
                 aria-label="Search"
               />
               <Button
+                className="home-link"
                 style={{
                   backgroundColor: "#121212",
                   border: "none",
@@ -153,6 +159,7 @@ const NavbarComp = () => {
                   quantity={currentProduct.quantity}
                 ></ModalCartComp>
               ))}
+
               <h1>Total: ${cart.getTotalCost().toFixed(2)}</h1>
 
               <Button onClick={checkout} variant="success">
