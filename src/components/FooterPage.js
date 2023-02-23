@@ -25,8 +25,18 @@ const FooterPage = () => {
         <p style={{ marginBottom: "1px" }}>Terms and Policys</p>
       </div>
       <div className="social-media">
-        <InstagramIcon />
-        <FacebookIcon />
+        <Link
+          to="https://www.instagram.com/hikingpawz/"
+          style={{ color: "#171717" }}
+        >
+          <InstagramIcon />
+        </Link>
+        <Link
+          to="https://www.facebook.com/Hikingpawz/"
+          style={{ color: "#171717" }}
+        >
+          <FacebookIcon />
+        </Link>
       </div>
       <h6 className="footer-content">© {year} Hiking Pawz</h6>
     </div>

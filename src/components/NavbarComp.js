@@ -65,8 +65,7 @@ const NavbarComp = () => {
               backgroundColor: "#171717",
               color: "#6B011F",
               border: "none",
-              boxShadow: "1px 10px 15px rgb(0,0,0,0.8)",
-              opacity: "0.8",
+              boxShadow: "5px 10px 5px rgb(0,0,0,0.5)",
             }}
             onClick={() => showFunc(true)}
           >

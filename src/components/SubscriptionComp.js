@@ -5,11 +5,13 @@ const SubscriptionComp = () => {
   return (
     <Container>
       <div className="subscription">
-        <Form style={{ margin: "auto auto", width: "60%" }}>
-          <h1 style={{ textAlign: "center" }}>Subscribe for Updates</h1>
+        <Form
+          style={{ margin: "auto auto", width: "60%", textAlign: "center" }}
+        >
+          <h1 style={{ color: "white" }}>Subscribe for Updates</h1>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
+            <Form.Label style={{ color: "white" }}>Email address</Form.Label>
             <Form.Control type="email" placeholder="Enter email" />
             <Form.Text className="text-muted text">
               <p className="sub-text">
@@ -17,8 +19,11 @@ const SubscriptionComp = () => {
               </p>
             </Form.Text>
           </Form.Group>
-
-          <Button variant="primary" type="submit">
+          <Button
+            style={{ width: "50%", backgroundColor: "#6b011f", border: "none" }}
+            variant="primary"
+            type="submit"
+          >
             Submit
           </Button>
         </Form>

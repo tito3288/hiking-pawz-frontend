@@ -14,7 +14,7 @@ const ItemPage = () => {
       style={{
         backgroundColor: "#121212",
         backgroundImage:
-          "url(https://www.transparenttextures.com/patterns/shley-tree-2.png)",
+          "url(https://www.transparenttextures.com/patterns/dark-leather.png)",
         height: "100%",
       }}
     >

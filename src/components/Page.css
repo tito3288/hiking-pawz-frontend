@@ -188,12 +188,15 @@
     width: 90%;
     height: 100%;
     padding: 20px;
-    background-color: #6a0000;
+    background-color: #171717;
     margin: 10% auto;
     display: flex;
     border-radius: 30px;
-    box-shadow: 15px 15px 15px rgb(0, 0, 0, 0.4);
-    border: solid rgb(255, 255, 255, 0.2);
+    box-shadow: -8px -10px 15px rgb(255, 255, 255, 0),
+      15px 15px 15px rgb(0, 0, 0, 0.1),
+      inset -1px -5px 5px rgb(255, 255, 255, 0.1),
+      inset 5px 5px 5px rgb(0, 0, 0, 0.5);
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
   }
 
   .sub-text {
@@ -271,7 +274,8 @@
   .mission-image1 {
     margin: auto 10%;
     width: 80%;
-    border-radius: 20px;
+    padding: 20px 20px;
+    border-radius: 40px;
   }
 
   .mission-image2 {
@@ -323,10 +327,9 @@
   }
 
   .home-link {
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 5px 10px 5px rgb(0, 0, 0, 0.5);
     color: #6b011f;
-    border: solid 2px;
     padding: 8px 8px;
     margin: auto auto;
     opacity: 0.8;
@@ -337,9 +340,11 @@
     height: 100%;
     margin-top: 20%;
     background-color: #171717;
-    box-shadow: -8px -10px 15px rgb(0, 0, 0, 0.5),
-      15px 15px 15px rgb(0, 0, 0, 0.5), inset -1px -5px 5px rgb(0, 0, 0, 0.5),
-      inset 5px 5px 5px rgb(0, 0, 0, 0.5);
+    border-radius: 20px;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");
+    box-shadow: -8px -10px 15px rgb(255, 255, 255, 0),
+      15px 15px 15px rgb(0, 0, 0, 0.1), inset -5px -5px 5px rgb(0, 0, 0, 0.4),
+      inset 5px 5px 5px rgb(0, 0, 0, 0.4);
   }
   .item-page-border-right {
     border-right: solid 10px #121212;
@@ -349,6 +354,7 @@
     width: 80%;
     margin-top: 23%;
     margin-left: 8%;
+    box-shadow: -1px 0px 25px rgb(0, 0, 0, 0.8);
   }
 
   .wrapper {
@@ -429,12 +435,15 @@
   .subscription {
     width: 1000px;
     height: 500px;
-    background-color: #6a0000;
+    background-color: #171717;
     margin: 10% auto;
     display: flex;
     border-radius: 30px;
-    box-shadow: 15px 15px 15px rgb(0, 0, 0, 0.4);
-    border: solid rgb(255, 255, 255, 0.2);
+    box-shadow: -8px -10px 15px rgb(255, 255, 255, 0),
+      15px 15px 15px rgb(0, 0, 0, 0.1),
+      inset -1px -5px 5px rgb(255, 255, 255, 0.1),
+      inset 5px 5px 5px rgb(0, 0, 0, 0.5);
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
   }
 
   .product-background {

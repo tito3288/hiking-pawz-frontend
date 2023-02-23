@@ -25,6 +25,9 @@ const ItemComp = (props) => {
     numInCartFunc(0);
   }
 
+  // box-shadow: inset -5px -6px 5px rgb(255, 255, 255, 0.1),
+  // inset 5px 6px 5px rgb(255, 255, 255, 0.1);
+
   return (
     <Container style={{ display: "flex" }}>
       <div className="item-page-outline">
