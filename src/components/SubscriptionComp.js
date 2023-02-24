@@ -1,7 +1,13 @@
 import React from "react";
 import { Button, Form, Container } from "react-bootstrap";
+import { motion, useAnimation } from "framer-motion";
 
 const SubscriptionComp = () => {
+  //this useState under was used to create onClick animation without the framer motion component useAnimation() ⬇️
+  // const [animate, animateFunc] = React.useState(false);
+
+  const control = useAnimation();
+
   return (
     <Container>
       <div className="subscription">
@@ -19,13 +25,24 @@ const SubscriptionComp = () => {
               </p>
             </Form.Text>
           </Form.Group>
-          <Button
-            style={{ width: "50%", backgroundColor: "#6b011f", border: "none" }}
-            variant="primary"
-            type="submit"
-          >
-            Submit
-          </Button>
+          <motion.div animate={control} transition={{ duration: 0.5 }}>
+            <Button
+              onClick={() =>
+                control.start({
+                  scale: [1.5, 1],
+                })
+              }
+              style={{
+                width: "50%",
+                backgroundColor: "#6b011f",
+                border: "none",
+              }}
+              variant="primary"
+              // type="submit"
+            >
+              Submit
+            </Button>
+          </motion.div>
         </Form>
       </div>
     </Container>

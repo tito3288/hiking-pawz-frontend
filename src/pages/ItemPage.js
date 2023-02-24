@@ -3,6 +3,7 @@ import ItemComp from "../components/ItemComp";
 import FooterPage from "../components/FooterPage";
 import { productArray } from "../productArray";
 import NavbarComp from "../components/NavbarComp";
+import { motion } from "framer-motion";
 
 const ItemPage = () => {
   const product1 = productArray.find(
@@ -10,7 +11,13 @@ const ItemPage = () => {
   );
 
   return (
-    <div
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{
+        x: window.innerHeight,
+        transition: { duration: 0.1, type: "spring", bounce: 0.5 },
+      }}
       style={{
         backgroundColor: "#121212",
         backgroundImage:
@@ -21,7 +28,7 @@ const ItemPage = () => {
       <NavbarComp />
       <ItemComp id={product1.id} />
       <FooterPage></FooterPage>
-    </div>
+    </motion.div>
   );
 };
 

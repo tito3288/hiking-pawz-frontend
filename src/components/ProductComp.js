@@ -2,6 +2,7 @@ import React from "react";
 import CardComp from "./CardComp";
 import { productArray } from "../productArray";
 import { Row, Col, Container } from "react-bootstrap";
+import { motion } from "framer-motion";
 
 const ProductComp = () => {
   return (
@@ -10,13 +11,19 @@ const ProductComp = () => {
         {productArray.map((value, index) => {
           return (
             <Col key={index} align="center" className="g-3">
-              <CardComp
-                title={value.title}
-                price={value.price}
-                img={value.img}
-                id={value.id}
-                page={value.page}
-              />
+              <motion.div
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ type: "spring", bounce: 0.6, stiffness: 100 }}
+              >
+                <CardComp
+                  title={value.title}
+                  price={value.price}
+                  img={value.img}
+                  id={value.id}
+                  page={value.page}
+                />
+              </motion.div>
             </Col>
           );
         })}

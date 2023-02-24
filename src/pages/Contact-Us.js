@@ -3,10 +3,20 @@ import NavbarComp from "../components/NavbarComp";
 import FooterPage from "../components/FooterPage";
 import { Button, Form, Container } from "react-bootstrap";
 import "../Links.css";
+import { motion } from "framer-motion";
 
 const ContactUs = () => {
   return (
-    <div className="flex-wrapper">
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{
+        x: window.innerHeight,
+        transition: { duration: 0.1, type: "spring", bounce: 0.5 },
+      }}
+      style={{ backgroundColor: "gray" }}
+      className="flex-wrapper"
+    >
       <NavbarComp />
       <Container style={{ display: "flex" }}>
         <div className="subscription contact-page">
@@ -26,7 +36,7 @@ const ContactUs = () => {
         </div>
       </Container>
       <FooterPage />
-    </div>
+    </motion.div>
   );
 };
 

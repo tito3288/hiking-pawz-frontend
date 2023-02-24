@@ -6,10 +6,19 @@ import FooterPage from "../components/FooterPage";
 import ProductDesc from "../components/ProductDesc";
 import MissionCom from "../components/MissionCom";
 import SubscriptionComp from "../components/SubscriptionComp";
+import { motion } from "framer-motion";
+import Video from "../components/Video";
 
 const LandingPage = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{
+        x: window.innerHeight,
+        transition: { duration: 0.1, type: "spring", bounce: 0.5 },
+      }}
+    >
       <div
         style={{
           backgroundColor: "#121212",
@@ -18,14 +27,15 @@ const LandingPage = () => {
         }}
       >
         <NavbarComp />
-        <CarouselComp />
+        {/* <CarouselComp /> */}
+        <Video />
         <MissionCom />
         <ProductDesc />
         <ProductComp />
         <SubscriptionComp />
         <FooterPage></FooterPage>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

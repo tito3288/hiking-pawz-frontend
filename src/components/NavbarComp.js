@@ -17,14 +17,16 @@ import SearchIcon from "@mui/icons-material/Search";
 import "./Page.css";
 
 const NavbarComp = () => {
+  //to show the modal
   const [show, showFunc] = React.useState(false);
-
   const cart = useContext(CartContext);
 
+  //to get ahold of products in cart
   const productsOnCart = cart.items.reduce((sum, value) => {
     return sum + value.quantity;
   }, 0);
 
+  //to connect to node stripe api
   const checkout = async () => {
     await fetch("http://localhost:4000/checkout", {
       method: "POST",
@@ -43,16 +45,36 @@ const NavbarComp = () => {
       });
   };
 
+  const [click, clickFunc] = React.useState(false);
+
+  function handleClick() {
+    clickFunc(!click);
+  }
+
+  //change the color while scrolling
+
+  const [color, colorFunc] = React.useState(false);
+
+  function changeColor() {
+    if (window.scrollY >= 90) {
+      colorFunc(true);
+    } else {
+      colorFunc(false);
+    }
+  }
+
+  window.addEventListener("scroll", changeColor);
+
   return (
     <div
-      style={{
-        backgroundColor: "#171717",
-        position: "fixed",
-        zIndex: "200",
-        width: "100%",
-      }}
+    // style={{
+    //   backgroundColor: "#171717",
+    //   position: "fixed",
+    //   zIndex: "20",
+    //   width: "100%",
+    // }}
     >
-      <Navbar expand="sm">
+      <Navbar expand="sm" style={{ position: "fixed" }} className="navbar">
         <Navbar.Brand href="/">
           <div className="logo-outline">
             <img src="transparant-logo.png" className="logo" alt="logo"></img>

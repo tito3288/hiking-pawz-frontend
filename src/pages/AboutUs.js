@@ -3,20 +3,29 @@ import NavbarComp from "../components/NavbarComp";
 import FooterPage from "../components/FooterPage";
 import { Stack, Container } from "react-bootstrap";
 import "../Links.css";
+import { motion } from "framer-motion";
 
 const AboutUs = () => {
   //Move all of the styling on the css page
 
   return (
-    <div className="flex-wrapper">
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{
+        x: window.innerHeight,
+        transition: { duration: 0.1, type: "spring", bounce: 0.5 },
+      }}
+      className="flex-wrapper"
+    >
       <NavbarComp />
+
       <div className="aboutus-section">
         <Container className="aboutus-container">
           <Stack>
             <h1
               style={{
                 color: "black",
-                marginTop: "20%",
                 padding: "10px 10px",
               }}
             >
@@ -48,9 +57,9 @@ const AboutUs = () => {
             </h4>
           </Stack>
         </Container>
+        <FooterPage />
       </div>
-      <FooterPage />
-    </div>
+    </motion.div>
   );
 };
 
