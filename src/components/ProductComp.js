@@ -14,7 +14,12 @@ const ProductComp = () => {
               <motion.div
                 initial={{ x: -50, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                transition={{ type: "spring", bounce: 0.6, stiffness: 100 }}
+                transition={{
+                  type: "spring",
+                  bounce: 0.5,
+                  stiffness: 200,
+                  damping: 10,
+                }}
               >
                 <CardComp
                   title={value.title}

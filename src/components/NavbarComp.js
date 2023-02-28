@@ -15,10 +15,12 @@ import ModalCartComp from "./ModalCartComp";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import SearchIcon from "@mui/icons-material/Search";
 import "./Page.css";
+import { motion } from "framer-motion";
 
 const NavbarComp = () => {
   //to show the modal
   const [show, showFunc] = React.useState(false);
+
   const cart = useContext(CartContext);
 
   //to get ahold of products in cart
@@ -81,21 +83,44 @@ const NavbarComp = () => {
           </div>
         </Navbar.Brand>
         <Stack direction="horizontal" className="nav-cart-toggle">
-          <Button
-            className="shopping-cart"
-            style={{
-              backgroundColor: "#171717",
-              color: "#6B011F",
-              border: "none",
-              boxShadow: "5px 10px 5px rgb(0,0,0,0.5)",
-            }}
-            onClick={() => showFunc(true)}
-          >
-            <ShoppingCartRoundedIcon /> {productsOnCart}
-          </Button>
+          {productsOnCart > 0 ? (
+            <motion.div
+              initial={{ scale: 1 }}
+              animate={{ scale: [2, 1] }}
+              transition={{ type: "spring" }}
+            >
+              <Button
+                className="shopping-cart"
+                style={{
+                  backgroundColor: "#171717",
+                  color: "#6B011F",
+                  border: "none",
+                }}
+                onClick={() => showFunc(true)}
+              >
+                <ShoppingCartRoundedIcon /> {productsOnCart}
+              </Button>
+            </motion.div>
+          ) : (
+            <Button
+              className="shopping-cart"
+              style={{
+                backgroundColor: "#171717",
+                color: "#6B011F",
+                border: "none",
+              }}
+              onClick={() => showFunc(true)}
+            >
+              <ShoppingCartRoundedIcon /> {productsOnCart}
+            </Button>
+          )}
+
           <Navbar.Toggle
             className="nav-toggle"
-            style={{ border: "none", backgroundColor: "#121212" }}
+            style={{
+              border: "none",
+              backgroundColor: "#121212",
+            }}
             aria-controls={`offcanvasNavbar-expand-md`}
           />
         </Stack>
@@ -113,37 +138,44 @@ const NavbarComp = () => {
               id={`offcanvasNavbar-expand-sm`}
             ></OffcanvasTitle>
           </Offcanvas.Header>
-          <Offcanvas.Body>
-            <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link href="AboutUs">
-                <p className="home-link">About Us</p>
-              </Nav.Link>
-              <Nav.Link href="Contact-Us">
-                <p className="home-link">Contact Us</p>
-              </Nav.Link>
-            </Nav>
-            <Form className="d-flex">
-              <Form.Control
-                style={{ margin: "auto auto" }}
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button
-                style={{
-                  backgroundColor: "#121212",
-                  border: "none",
-                  color: "#6B011F",
-                  opacity: "0.8",
-                  margin: "auto auto",
-                  boxShadow: "5px 10px 5px rgb(0, 0, 0, 0.5)",
-                }}
-              >
-                <SearchIcon />
-              </Button>
-            </Form>
-          </Offcanvas.Body>
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            transition={{ type: "spring", bounce: 0 }}
+          >
+            <Offcanvas.Body>
+              <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Nav.Link href="AboutUs">
+                  <p className="home-link">About Us</p>
+                </Nav.Link>
+                <Nav.Link href="Contact-Us">
+                  <p className="home-link">Contact Us</p>
+                </Nav.Link>
+              </Nav>
+              <Form className="d-flex">
+                <Form.Control
+                  style={{ margin: "auto auto" }}
+                  type="search"
+                  placeholder="Search"
+                  className="me-2"
+                  aria-label="Search"
+                />
+                <Button
+                  //this search class has to be moved to page css
+                  style={{
+                    backgroundColor: "#121212",
+                    border: "none",
+                    color: "#6B011F",
+                    opacity: "0.8",
+                    margin: "auto auto",
+                    boxShadow: "5px 10px 5px rgb(0, 0, 0, 0.5)",
+                  }}
+                >
+                  <SearchIcon />
+                </Button>
+              </Form>
+            </Offcanvas.Body>
+          </motion.div>
         </Navbar.Offcanvas>
 
         <Navbar.Collapse className="justify-content-end"></Navbar.Collapse>

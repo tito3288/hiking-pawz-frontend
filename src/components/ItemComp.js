@@ -5,8 +5,11 @@ import { getProductData } from "../productArray";
 import { CartContext } from "../CartContext";
 import { useContext } from "react";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+import { motion, useAnimation } from "framer-motion";
 
 const ItemComp = (props) => {
+  const control = useAnimation();
+
   const productData = getProductData(props.id);
   const cart = useContext(CartContext);
 
@@ -18,15 +21,24 @@ const ItemComp = (props) => {
     } else {
       numInCartFunc(numInCart - 1);
     }
+
+    control.start({
+      scale: [1.3, 1],
+    });
+  }
+
+  function handleAddToFromCart() {
+    numInCartFunc(numInCart + 1);
+
+    control.start({
+      scale: [1.3, 1],
+    });
   }
 
   function handleAddToCart() {
     cart.addXAmountToCart(props.id, numInCart);
     numInCartFunc(0);
   }
-
-  // box-shadow: inset -5px -6px 5px rgb(255, 255, 255, 0.1),
-  // inset 5px 6px 5px rgb(255, 255, 255, 0.1);
 
   return (
     <Container style={{ display: "flex" }}>
@@ -60,18 +72,19 @@ const ItemComp = (props) => {
               </ul>
 
               <h5 className="quantity-title">QUANTITY</h5>
-              <div className="wrapper">
+              <motion.div
+                animate={control}
+                transition={{ type: "spring" }}
+                className="wrapper"
+              >
                 <span onClick={handleSubtractFromCart} className="minus">
                   -
                 </span>
                 <span className="num">{numInCart}</span>
-                <span
-                  onClick={() => numInCartFunc(numInCart + 1)}
-                  className="plus"
-                >
+                <span onClick={handleAddToFromCart} className="plus">
                   +
                 </span>
-              </div>
+              </motion.div>
 
               <Button
                 onClick={handleAddToCart}

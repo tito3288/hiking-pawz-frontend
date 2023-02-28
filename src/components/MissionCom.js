@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { motion } from "framer-motion";
 
 const MissionCom = () => {
   return (
@@ -23,7 +24,11 @@ const MissionCom = () => {
         <Col className="mb-4">
           <div className="missionDesMaroon">
             <h1>Maroon Title</h1>
-            <p>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1.5 }}
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -45,7 +50,7 @@ const MissionCom = () => {
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            </motion.p>
           </div>
         </Col>
       </Row>

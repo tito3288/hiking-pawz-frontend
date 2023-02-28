@@ -20,13 +20,20 @@
 
   /* contact us  */
   .contact-page {
-    margin-top: 70%;
+    margin-top: 60%;
   }
 
   .contactpage-content {
     margin: auto auto;
     width: 60%;
     text-align: center;
+    color: white;
+  }
+
+  .contact-us-textarea {
+    width: 100%;
+    border-radius: 10px;
+    height: 100px;
   }
 
   /* exchnages and returns */
@@ -61,18 +68,18 @@
     margin-top: 40px;
     margin-bottom: 10%;
     display: flex;
-    height: 450px;
+    height: 100%;
   }
 
   .exchform-content {
-    margin: 15% auto;
+    margin: auto auto;
     width: 80%;
   }
 
   .form-header {
     text-align: center;
     font-size: 30px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
 
   .exch-textfield {
@@ -86,6 +93,8 @@
     background-color: gray;
     border: none;
     height: 50px;
+    display: inline;
+    margin: auto 25%;
   }
 }
 
@@ -99,6 +108,13 @@
     margin: auto auto;
     width: 60%;
     text-align: center;
+    color: white;
+  }
+
+  .contact-us-textarea {
+    width: 100%;
+    border-radius: 10px;
+    height: 100px;
   }
 
   /* about us */
@@ -108,6 +124,7 @@
 
   .aboutus-img {
     width: 60%;
+    border-radius: 20px;
     margin: auto auto;
     margin-top: 10%;
     box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.9);
@@ -146,7 +163,7 @@
     margin-top: 40px;
     margin-bottom: 10%;
     display: flex;
-    height: 600px;
+    height: 100%;
   }
 
   .exchform-content {
@@ -164,7 +181,7 @@
   }
 
   .return-button {
-    margin: auto 30%;
+    margin: auto 25%;
     width: 50%;
     background-color: gray;
     border: none;

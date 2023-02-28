@@ -1,12 +1,16 @@
 import React from "react";
 
 const Video = () => {
+  //figure out how to make video play faster and not lag
   return (
     <div style={{ display: "flex" }}>
       <video
-        style={{ width: "100%", height: "1050px", marginTop: "8%" }}
-        src="/videos/hiking-video2.mp4"
+        className="video"
+        src="/videos/shorter-hiking-video2.mp4"
         autoPlay
+        onCanPlay="this.play()"
+        controls="controls"
+        preload="auto"
         // loop
         muted
       ></video>
