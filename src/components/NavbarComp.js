@@ -65,18 +65,26 @@ const NavbarComp = () => {
     }
   }
 
-  window.addEventListener("scroll", changeColor);
+  window.addEventListener("scroll", scrollFunction);
+
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 80 ||
+      document.documentElement.scrollTop > 80
+    ) {
+      document.querySelector(".navbar").style.padding = "15px 15px";
+    } else {
+      document.querySelector(".navbar").style.padding = "5px 5px";
+    }
+  }
 
   return (
-    <div
-    // style={{
-    //   backgroundColor: "#171717",
-    //   position: "fixed",
-    //   zIndex: "20",
-    //   width: "100%",
-    // }}
-    >
-      <Navbar expand="sm" style={{ position: "fixed" }} className="navbar">
+    <div>
+      <Navbar expand="md" className="navbar" style={{ position: "fixed" }}>
         <Navbar.Brand href="/">
           <div className="logo-outline">
             <img src="transparant-logo.png" className="logo" alt="logo"></img>
@@ -90,7 +98,7 @@ const NavbarComp = () => {
               transition={{ type: "spring" }}
             >
               <Button
-                className="shopping-cart"
+                className="cart"
                 style={{
                   backgroundColor: "#171717",
                   color: "#6B011F",
@@ -103,7 +111,7 @@ const NavbarComp = () => {
             </motion.div>
           ) : (
             <Button
-              className="shopping-cart"
+              className="cart"
               style={{
                 backgroundColor: "#171717",
                 color: "#6B011F",
@@ -114,7 +122,6 @@ const NavbarComp = () => {
               <ShoppingCartRoundedIcon /> {productsOnCart}
             </Button>
           )}
-
           <Navbar.Toggle
             className="nav-toggle"
             style={{
@@ -123,60 +130,60 @@ const NavbarComp = () => {
             }}
             aria-controls={`offcanvasNavbar-expand-md`}
           />
-        </Stack>
 
-        {/* offcanvas start */}
-        <Navbar.Offcanvas
-          id={`offcanvasNavbar-expand-md`}
-          aria-labelledby={`offcanvasNavbarLabel-expand-md`}
-          placement="end"
-          style={{ width: "90%", backgroundColor: "#171717" }}
-        >
-          <Offcanvas.Header closeButton>
-            <OffcanvasTitle
-              style={{ color: "white" }}
-              id={`offcanvasNavbar-expand-sm`}
-            ></OffcanvasTitle>
-          </Offcanvas.Header>
-          <motion.div
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            transition={{ type: "spring", bounce: 0 }}
+          {/* offcanvas start */}
+          <Navbar.Offcanvas
+            id={`offcanvasNavbar-expand-md`}
+            aria-labelledby={`offcanvasNavbarLabel-expand-md`}
+            placement="end"
+            style={{ width: "90%", backgroundColor: "#171717" }}
           >
-            <Offcanvas.Body>
-              <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="AboutUs">
-                  <p className="home-link">About Us</p>
-                </Nav.Link>
-                <Nav.Link href="Contact-Us">
-                  <p className="home-link">Contact Us</p>
-                </Nav.Link>
-              </Nav>
-              <Form className="d-flex">
-                <Form.Control
-                  style={{ margin: "auto auto" }}
-                  type="search"
-                  placeholder="Search"
-                  className="me-2"
-                  aria-label="Search"
-                />
-                <Button
-                  //this search class has to be moved to page css
-                  style={{
-                    backgroundColor: "#121212",
-                    border: "none",
-                    color: "#6B011F",
-                    opacity: "0.8",
-                    margin: "auto auto",
-                    boxShadow: "5px 10px 5px rgb(0, 0, 0, 0.5)",
-                  }}
-                >
-                  <SearchIcon />
-                </Button>
-              </Form>
-            </Offcanvas.Body>
-          </motion.div>
-        </Navbar.Offcanvas>
+            <Offcanvas.Header closeButton>
+              <OffcanvasTitle
+                style={{ color: "white" }}
+                id={`offcanvasNavbar-expand-sm`}
+              ></OffcanvasTitle>
+            </Offcanvas.Header>
+            <motion.div
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ type: "spring", bounce: 0 }}
+            >
+              <Offcanvas.Body>
+                <Nav className="justify-content-end flex-grow-1 pe-3">
+                  <Nav.Link href="AboutUs">
+                    <p className="home-link">About Us</p>
+                  </Nav.Link>
+                  <Nav.Link href="Contact-Us">
+                    <p className="home-link">Contact Us</p>
+                  </Nav.Link>
+                </Nav>
+                <Form className="d-flex">
+                  <Form.Control
+                    style={{ margin: "auto auto" }}
+                    type="search"
+                    placeholder="Search"
+                    className="me-2"
+                    aria-label="Search"
+                  />
+                  <Button
+                    //this search class has to be moved to page css
+                    style={{
+                      backgroundColor: "#121212",
+                      border: "none",
+                      color: "#6B011F",
+                      opacity: "0.8",
+                      margin: "auto auto",
+                      boxShadow: "5px 10px 5px rgb(0, 0, 0, 0.5)",
+                    }}
+                  >
+                    <SearchIcon />
+                  </Button>
+                </Form>
+              </Offcanvas.Body>
+            </motion.div>
+          </Navbar.Offcanvas>
+        </Stack>
 
         <Navbar.Collapse className="justify-content-end"></Navbar.Collapse>
       </Navbar>

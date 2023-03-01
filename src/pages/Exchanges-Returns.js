@@ -2,21 +2,12 @@ import React from "react";
 import { Form, Button } from "react-bootstrap";
 import "../Links.css";
 import { useForm, ValidationError } from "@formspree/react";
+import SuccessContact from "../components/SuccessContact";
 
 const ExchangesReturns = () => {
   const [state, handleSubmit] = useForm("mpzerzrb");
   if (state.succeeded) {
-    return (
-      <div>
-        <Button style={{ margin: "3px 3px" }} href="/" variant="primary">
-          Go Back to Home Page
-        </Button>
-        <h1 style={{ textAlign: "center" }}>
-          We'll get back to you as soon as possible about your return or
-          exchange, Thank You!
-        </h1>
-      </div>
-    );
+    return <SuccessContact />;
   }
 
   return (

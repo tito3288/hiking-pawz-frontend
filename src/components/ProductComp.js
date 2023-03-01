@@ -7,12 +7,12 @@ import { motion } from "framer-motion";
 const ProductComp = () => {
   return (
     <Container>
-      <Row xs={2} sm={1} md={3} lg={3}>
+      <Row xs={2} sm={2} md={3} lg={3}>
         {productArray.map((value, index) => {
           return (
-            <Col key={index} align="center" className="g-3">
+            <Col key={index} align="center" className="g-4">
               <motion.div
-                initial={{ x: -50, opacity: 0 }}
+                initial={{ x: -20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
                   type: "spring",

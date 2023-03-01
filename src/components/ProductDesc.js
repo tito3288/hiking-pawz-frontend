@@ -2,6 +2,7 @@ import React from "react";
 import "./Page.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
+import { style } from "@mui/system";
 
 const ProductDesc = () => {
   return (
@@ -25,35 +26,28 @@ const ProductDesc = () => {
           </Col>
         </Row>
       </motion.div>
-      <div
-        //When moving elements from the right to the left it wiil temper with the offcanvas menu
-        initial={{ x: 100 }}
-        whileInView={{ x: 0 }}
-        transition={{ type: "tween", duration: 0.9 }}
-      >
-        <Row>
-          <Col style={{ marginBottom: "30px", height: "100%" }}>
-            <div className="productDescriptionSection2">
-              <motion.p
-                initial={{ scale: 0 }}
-                whileInView={{ rotate: 360, scale: 1 }}
-                viewport={{ once: true }}
-                //damping slows down the bouciness that the element comes witht the default  type "spring"
-                transition={{
-                  type: "spring",
-                  stiffness: 260,
-                  damping: 15,
-                }}
-                style={{ margin: "auto auto" }}
-              >
-                Collar story or description like what its made out of, we make
-                ou rcollar by hand etc etc and more, we will also give out gifts
-                to any of our subs
-              </motion.p>
-            </div>
-          </Col>
-        </Row>
-      </div>
+      <Row>
+        <Col style={{ marginBottom: "30px" }}>
+          <div className="productDescriptionSection2">
+            <motion.p
+              initial={{ scale: 0 }}
+              whileInView={{ rotate: 360, scale: 1 }}
+              viewport={{ once: true }}
+              //damping slows down the bouciness that the element comes witht the default  type "spring"
+              transition={{
+                type: "spring",
+                stiffness: 260,
+                damping: 15,
+              }}
+              style={{ margin: "auto auto" }}
+            >
+              Collar story or description like what its made out of, we make ou
+              rcollar by hand etc etc and more, we will also give out gifts to
+              any of our subs
+            </motion.p>
+          </div>
+        </Col>
+      </Row>
     </Container>
   );
 };

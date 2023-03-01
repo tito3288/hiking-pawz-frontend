@@ -8,7 +8,7 @@ const Video = () => {
         className="video"
         src="/videos/shorter-hiking-video2.mp4"
         autoPlay
-        onCanPlay="this.play()"
+        // onCanPlay={this.onCanPlay()}
         controls="controls"
         preload="auto"
         // loop

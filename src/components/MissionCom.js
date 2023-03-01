@@ -6,7 +6,7 @@ const MissionCom = () => {
   return (
     //this container element looks great on mobile but not so much on desktop view, check before deployment.
     <Container>
-      <Row lg={2} md={2} sm={1} xs={1} className="mb-5 my-5 mission-container">
+      <Row lg={2} md={1} sm={1} xs={1} className="mb-5 my-5 mission-container">
         <Col className="mb-4">
           <div className="missionDesBackground">
             <img

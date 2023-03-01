@@ -5,21 +5,12 @@ import { Button, Form, Container } from "react-bootstrap";
 import "../Links.css";
 import { motion } from "framer-motion";
 import { useForm, ValidationError } from "@formspree/react";
+import SuccessContact from "../components/SuccessContact";
 
 const ContactUs = () => {
   const [state, handleSubmit] = useForm("mjvdrkdj");
   if (state.succeeded) {
-    return (
-      //Edit the success page to look better, the go back to home page button works
-      <div>
-        <Button style={{ margin: "3px 3px" }} href="/" variant="primary">
-          Go Back to Home Page
-        </Button>
-        <h1 style={{ textAlign: "center" }}>
-          We'll get back to you as soon as possible!
-        </h1>
-      </div>
-    );
+    return <SuccessContact />;
   }
 
   return (
@@ -48,7 +39,7 @@ const ContactUs = () => {
             </p>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Control
-                style={{ marginBottom: "30px" }}
+                style={{ marginBottom: "10px" }}
                 type="email"
                 name="email"
                 id="email"

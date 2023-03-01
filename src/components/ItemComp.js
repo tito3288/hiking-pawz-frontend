@@ -43,7 +43,7 @@ const ItemComp = (props) => {
   return (
     <Container style={{ display: "flex" }}>
       <div className="item-page-outline">
-        <Row className="item-row" xs={1} sm={2} md={2} lg={2}>
+        <Row className="item-row" xs={1} sm={1} md={1} lg={2}>
           <Col className="item-page-border-right">
             <img
               className="item-image"

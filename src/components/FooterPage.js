@@ -37,17 +37,17 @@ const FooterPage = () => {
             Contact
           </p>
         </Link>
-        <p style={{ marginBottom: "1px" }}>Terms and Policys</p>
+        <p style={{ marginBottom: "1px", color: "white" }}>Terms and Policys</p>
+        <div style={{ marginTop: "5px" }}>
+          <Link to="https://www.instagram.com/hikingpawz/">
+            <InstagramIcon style={{ color: "white" }} />
+          </Link>
+          <Link to="https://www.facebook.com/Hikingpawz/">
+            <FacebookIcon style={{ color: "white" }} />
+          </Link>
+        </div>
       </div>
-      <div className="social-media">
-        <Link to="https://www.instagram.com/hikingpawz/">
-          <InstagramIcon style={{ color: "white" }} />
-        </Link>
-        <Link to="https://www.facebook.com/Hikingpawz/">
-          <FacebookIcon style={{ color: "white" }} />
-        </Link>
-      </div>
-      <h6 className="footer-content">© {year} Hiking Pawz</h6>
+      <h6 className="footer-trademark">© {year} Hiking Pawz</h6>
     </div>
   );
 };

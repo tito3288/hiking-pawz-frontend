@@ -33,7 +33,7 @@ const LandingPage = () => {
         <ProductDesc />
         <ProductComp />
         <SubscriptionComp />
-        <FooterPage></FooterPage>
+        <FooterPage />
       </div>
     </motion.div>
   );
