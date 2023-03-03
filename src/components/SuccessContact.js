@@ -24,7 +24,7 @@ const SuccessContact = () => {
         <motion.img
           initial={{ x: -100, scale: 0 }}
           animate={{ x: 0, scale: 1 }}
-          transition={{ duration: 3 }}
+          transition={{ duration: 2 }}
           src="13.png"
           alt="dog-chasing"
           className="dog-chasing"
@@ -39,7 +39,7 @@ const SuccessContact = () => {
         ></motion.img>
         <motion.img
           initial={{ x: -100 }}
-          animate={{ x: 0, rotate: [0, 5, -5, 5, 0] }}
+          animate={{ x: 0, rotate: [0, 5, -5, 5, -5, 5, 0] }}
           transition={{ duration: 2.5 }}
           alt="mailman-truck"
           src="11.png"

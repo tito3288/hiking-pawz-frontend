@@ -6,16 +6,16 @@ import {
   Nav,
   Offcanvas,
   OffcanvasTitle,
-  Form,
   Stack,
 } from "react-bootstrap";
 import { CartContext } from "../CartContext";
 import { useContext } from "react";
 import ModalCartComp from "./ModalCartComp";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
-import SearchIcon from "@mui/icons-material/Search";
 import "./Page.css";
 import { motion } from "framer-motion";
+import SearchBar from "./SearchBar";
+import Data from "../Data.json";
 
 const NavbarComp = () => {
   //to show the modal
@@ -110,17 +110,19 @@ const NavbarComp = () => {
               </Button>
             </motion.div>
           ) : (
-            <Button
-              className="cart"
-              style={{
-                backgroundColor: "#171717",
-                color: "#6B011F",
-                border: "none",
-              }}
-              onClick={() => showFunc(true)}
-            >
-              <ShoppingCartRoundedIcon /> {productsOnCart}
-            </Button>
+            <motion.div initial={{ scale: 1 }} whileHover={{ scale: 1.2 }}>
+              <Button
+                className="cart"
+                style={{
+                  backgroundColor: "#171717",
+                  color: "#6B011F",
+                  border: "none",
+                }}
+                onClick={() => showFunc(true)}
+              >
+                <ShoppingCartRoundedIcon /> {productsOnCart}
+              </Button>
+            </motion.div>
           )}
           <Navbar.Toggle
             className="nav-toggle"
@@ -152,34 +154,27 @@ const NavbarComp = () => {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="AboutUs">
-                    <p className="home-link">About Us</p>
+                    <motion.p
+                      initial={{ scale: 1 }}
+                      whileHover={{ scale: 1.2 }}
+                      className="home-link"
+                    >
+                      About Us
+                    </motion.p>
                   </Nav.Link>
                   <Nav.Link href="Contact-Us">
-                    <p className="home-link">Contact Us</p>
+                    <motion.p
+                      initial={{ scale: 1 }}
+                      whileHover={{ scale: 1.2 }}
+                      className="home-link"
+                    >
+                      Contact Us
+                    </motion.p>
                   </Nav.Link>
                 </Nav>
-                <Form className="d-flex">
-                  <Form.Control
-                    style={{ margin: "auto auto" }}
-                    type="search"
-                    placeholder="Search"
-                    className="me-2"
-                    aria-label="Search"
-                  />
-                  <Button
-                    //this search class has to be moved to page css
-                    style={{
-                      backgroundColor: "#121212",
-                      border: "none",
-                      color: "#6B011F",
-                      opacity: "0.8",
-                      margin: "auto auto",
-                      boxShadow: "5px 10px 5px rgb(0, 0, 0, 0.5)",
-                    }}
-                  >
-                    <SearchIcon />
-                  </Button>
-                </Form>
+
+                {/* SEARCHBAR */}
+                <SearchBar data={Data} />
               </Offcanvas.Body>
             </motion.div>
           </Navbar.Offcanvas>

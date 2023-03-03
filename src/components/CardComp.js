@@ -33,8 +33,8 @@ const CardComp = (props) => {
           <Card.Img src={props.img} style={{ borderRadius: "20px" }} />
         </Link>
         <Card.Body>
-          <Card.Title>{props.title}</Card.Title>
-          <Card.Text>${props.price}</Card.Text>
+          <Card.Title className="card-collar-title">{props.title}</Card.Title>
+          <Card.Text className="card-collar-price">${props.price}</Card.Text>
         </Card.Body>
       </Card>
     </motion.div>

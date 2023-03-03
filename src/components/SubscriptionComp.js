@@ -22,7 +22,12 @@ const SubscriptionComp = () => {
           </h1>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label style={{ color: "white" }}>Email address</Form.Label>
+            <Form.Label
+              className="subscription-email-title"
+              style={{ color: "white" }}
+            >
+              Email address
+            </Form.Label>
             <Form.Control type="email" placeholder="Enter email" />
             <Form.Text className="text-muted text">
               <p className="sub-text">

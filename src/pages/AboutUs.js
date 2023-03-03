@@ -24,7 +24,7 @@ const AboutUs = () => {
           <h1
             style={{
               color: "black",
-              padding: "10px 10px",
+              padding: "20px 20px",
             }}
           >
             About Us

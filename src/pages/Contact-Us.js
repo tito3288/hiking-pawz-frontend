@@ -65,11 +65,7 @@ const ContactUs = () => {
               />
             </Form.Group>
             <Button
-              style={{
-                backgroundColor: "#6b011f",
-                border: "none",
-                width: "100%",
-              }}
+              className="contactus-submitbtn"
               variant="primary"
               type="submit"
               disabled={state.submitting}

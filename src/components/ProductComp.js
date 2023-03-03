@@ -12,13 +12,12 @@ const ProductComp = () => {
           return (
             <Col key={index} align="center" className="g-4">
               <motion.div
-                initial={{ x: -20, opacity: 0 }}
+                initial={{ x: -20, opacity: 0, scale: 1 }}
                 whileInView={{ x: 0, opacity: 1 }}
+                whileHover={{ scale: 1.1 }}
                 transition={{
                   type: "spring",
-                  bounce: 0.5,
-                  stiffness: 200,
-                  damping: 10,
+                  damping: 6,
                 }}
               >
                 <CardComp

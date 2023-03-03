@@ -63,7 +63,7 @@ const ItemComp = (props) => {
               </p>
               <hr />
               <h5 className="size-title">SIZE</h5>
-              <h5>Select Size At Checkout</h5>
+              <h5 className="checkout-size-title">Select Size At Checkout</h5>
 
               <ul>
                 <li>Large (1-inch Width 18-26-inch Length)</li>

@@ -23,7 +23,7 @@ const MissionCom = () => {
         </Col>
         <Col className="mb-4">
           <div className="missionDesMaroon">
-            <h1>Maroon Title</h1>
+            <h1>Our Mission</h1>
             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}

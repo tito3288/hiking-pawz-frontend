@@ -9,7 +9,16 @@
 }
 
 .card {
-  border: solid 100px #121212;
+  border: solid 1px #121212;
+}
+
+.card-collar-title {
+  font-family: "Amatic SC", cursive;
+  font-size: 35px;
+}
+
+.card-collar-price {
+  font-size: 20px;
 }
 
 .video {
@@ -65,6 +74,11 @@
   padding: 30px 30px;
   color: wheat;
   border-radius: 30px;
+}
+
+.missionDesMaroon h1 {
+  font-family: "Amatic SC", cursive;
+  font-size: 50px;
 }
 
 .logo-outline {
@@ -128,6 +142,12 @@
     15px 15px 15px rgb(0, 0, 0, 0.1), inset -5px -5px 5px rgb(0, 0, 0, 0.4),
     inset 5px 5px 5px rgb(0, 0, 0, 0.4);
 }
+
+.item-page-outline li {
+  font-family: "Amatic SC", cursive;
+  font-size: 20px;
+}
+
 .item-page-border-right {
   border-right: solid 10px #121212;
 }
@@ -198,10 +218,16 @@
   padding: 30px 30px;
   width: 600px;
   height: 500px;
-  display: flex;
+  height: 100%;
+  /* display: flex; */
   margin-left: 50%;
   margin-top: 30px;
   border-radius: 20px;
+}
+
+.productDescriptionSection2 h1 {
+  font-family: "Amatic SC", cursive;
+  font-size: 50px;
 }
 
 .subscription {
@@ -218,8 +244,21 @@
   background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
 }
 
+.subscription p {
+  padding: 10px 10px;
+}
+
+.subscription-header {
+  font-family: "Amatic SC", cursive;
+  font-size: 60px;
+}
+
+.subscription-email-title {
+  font-size: 30px;
+}
+
 .subscription-submit-btn {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 50%;
 }
 
@@ -272,6 +311,15 @@
 
   .card {
     width: 10rem;
+  }
+
+  .card-collar-title {
+    font-family: "Amatic SC", cursive;
+    font-size: 25px;
+  }
+
+  .card-collar-price {
+    font-size: 15px;
   }
 
   .video {
@@ -354,6 +402,11 @@
       inset 5px 5px 5px rgb(0, 0, 0, 0.2); */
   }
 
+  .item-page-outline li {
+    font-family: "Amatic SC", cursive;
+    font-size: 15px;
+  }
+
   .item-row {
     text-align: center;
   }
@@ -394,7 +447,7 @@
   }
 
   .price-title {
-    font-size: 15px;
+    font-size: 25px;
     font-family: "Kosugi Maru", sans-serif;
   }
 
@@ -403,12 +456,13 @@
   }
 
   .size-title {
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: bold;
     font-family: "Kosugi Maru", sans-serif;
   }
 
   .quantity-title {
-    font-size: 15px;
+    font-size: 20px;
     font-family: "Kosugi Maru", sans-serif;
   }
 
@@ -453,6 +507,10 @@
     border-radius: 20px;
   }
 
+  .missionDesMaroon h1 {
+    font-size: 40px;
+  }
+
   .productDescriptionSection-img {
     margin: auto auto;
     width: 60%;
@@ -465,13 +523,17 @@
     text-align: center;
     font-size: small;
     width: 80%;
-    height: 80%;
+    height: 100%;
     padding: 20px 20px;
     color: wheat;
     margin-left: 17%;
     margin-top: 30px;
-    margin-bottom: 30px;
     border-radius: 20px;
+  }
+
+  .productDescriptionSection2 h1 {
+    font-family: "Amatic SC", cursive;
+    font-size: 40px;
   }
 
   .subscription {
@@ -490,8 +552,16 @@
     background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
   }
 
+  .subscription p {
+    padding: 10px 10px;
+  }
+
   .subscription-header {
-    font-size: 20px;
+    font-size: 25px;
+  }
+
+  .subscription-email-title {
+    font-size: 15px;
   }
 
   .subscription-submit-btn {
