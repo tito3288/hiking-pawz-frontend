@@ -16,6 +16,7 @@ import "./Page.css";
 import { motion } from "framer-motion";
 import SearchBar from "./SearchBar";
 import Data from "../Data.json";
+import { Link } from "react-router-dom";
 
 const NavbarComp = () => {
   //to show the modal
@@ -85,9 +86,11 @@ const NavbarComp = () => {
   return (
     <div>
       <Navbar expand="md" className="navbar" style={{ position: "fixed" }}>
-        <Navbar.Brand href="/">
+        <Navbar.Brand>
           <div className="logo-outline">
-            <img src="transparant-logo.png" className="logo" alt="logo"></img>
+            <Link to="/">
+              <img src="transparant-logo.png" className="logo" alt="logo"></img>
+            </Link>
           </div>
         </Navbar.Brand>
         <Stack direction="horizontal" className="nav-cart-toggle">
@@ -153,7 +156,7 @@ const NavbarComp = () => {
             >
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="AboutUs">
+                  <Link className="navbar-links" to="/AboutUs">
                     <motion.p
                       initial={{ scale: 1 }}
                       whileHover={{ scale: 1.2 }}
@@ -161,8 +164,9 @@ const NavbarComp = () => {
                     >
                       About Us
                     </motion.p>
-                  </Nav.Link>
-                  <Nav.Link href="Contact-Us">
+                  </Link>
+
+                  <Link className="navbar-links" to="/Contact-Us">
                     <motion.p
                       initial={{ scale: 1 }}
                       whileHover={{ scale: 1.2 }}
@@ -170,7 +174,7 @@ const NavbarComp = () => {
                     >
                       Contact Us
                     </motion.p>
-                  </Nav.Link>
+                  </Link>
                 </Nav>
 
                 {/* SEARCHBAR */}
@@ -184,10 +188,12 @@ const NavbarComp = () => {
       </Navbar>
       <Modal show={show} onHide={() => showFunc(false)}>
         <Modal.Header closeButton>
-          <Modal.Title>Shopping Cart</Modal.Title>
+          <Modal.Title style={{ textAlign: "center" }}>
+            Shopping Cart
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          {productsOnCart > 0 ? (
+          {productsOnCart !== 0 ? (
             <>
               <p>Items in your cart:</p>
               {cart.items.map((currentProduct, idx) => (
@@ -197,7 +203,7 @@ const NavbarComp = () => {
                   quantity={currentProduct.quantity}
                 ></ModalCartComp>
               ))}
-
+              <p style={{ color: "gray" }}>Taxes will be added at checkout</p>
               <h1>Total: ${cart.getTotalCost().toFixed(2)}</h1>
 
               <Button onClick={checkout} variant="success">

@@ -55,7 +55,12 @@ const SearchBar = ({ data }) => {
         >
           {filterData.map((value, key) => {
             return (
-              <a className="dataItem" href={value.link} target="_blank">
+              <a
+                className="dataItem"
+                key={key}
+                href={value.link}
+                target="_blank"
+              >
                 <p>{value.title}</p>
               </a>
             );

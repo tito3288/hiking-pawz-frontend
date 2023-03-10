@@ -24,20 +24,22 @@ const ContactUs = () => {
       className="flex-wrapper"
       style={{
         backgroundColor: "#171717",
-        backgroundImage:
-          "url(https://www.transparenttextures.com/patterns/cartographer.png)",
+        backgroundImage: "url(hiking-background.png)",
       }}
     >
       <NavbarComp />
       <Container style={{ display: "flex" }}>
-        <div className="subscription contact-page">
+        <div
+          style={{ backgroundImage: "url(black-felt.png)" }}
+          className="subscription contact-page"
+        >
           <Form onSubmit={handleSubmit} className="contactpage-content">
             <h1>Give Us A Bark!</h1>
             <p>
               Let us know how we can do better, have any questions or just
               simply want to talk to us.
             </p>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Group className="mb-3">
               <Form.Control
                 style={{ marginBottom: "10px" }}
                 type="email"

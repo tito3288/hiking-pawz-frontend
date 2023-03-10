@@ -2,11 +2,11 @@ import React from "react";
 import "../Links.css";
 import { Button } from "react-bootstrap";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const SuccessContact = () => {
   return (
     <div
-      className="contact-succes-background"
       style={{
         backgroundImage: "url(contact-page-background.png)",
         backgroundSize: "cover",
@@ -16,10 +16,9 @@ const SuccessContact = () => {
         // display: "flex",
       }}
     >
-      <Button className="homepage-button" href="/">
-        Home Page
-      </Button>
-
+      <Link to="/">
+        <Button className="homepage-button">Home Page</Button>
+      </Link>
       <div className="success-contactus-content">
         <motion.img
           initial={{ x: -100, scale: 0 }}

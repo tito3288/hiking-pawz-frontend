@@ -14,12 +14,12 @@ const AboutUs = () => {
       animate={{ width: "100%" }}
       exit={{
         x: window.innerHeight,
-        transition: { duration: 0.1, type: "spring", bounce: 0.5 },
+        transition: { duration: 0.1 },
       }}
     >
       <NavbarComp />
 
-      <Container style={{ display: "flex" }}>
+      <Container style={{ display: "flex", backgroundColor: "#F9F9F9" }}>
         <Stack className="aboutus-container">
           <h1
             style={{
@@ -36,27 +36,19 @@ const AboutUs = () => {
             className="aboutus-img"
           />
           <h4 className="aboutus-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            The safety of animals and the environment is our number one
+            priority. We have created collars that gives your pet not only a
+            unique look from any other collar but we've also integrated
+            sustainable materials into the webbing. Instead of using regular
+            nylon webbing, we make ours out of recycled plastic bottle caps
+            thats also creates a comfortable feel for your pet. Your purchase
+            helps reuse recycled materials for something as simple but yet
+            durable GUARANTEED. Everyone in the team is a Certified Food
+            Handlers as we care about the knowledge and regulations to making
+            the delicious Organic treats for you furry friends. We also donate
+            10% of each purchase to North Shore Animal League Organization the
+            biggest non kill rescue and adoption organization in the world here
+            in America.
           </h4>
         </Stack>
       </Container>

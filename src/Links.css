@@ -33,7 +33,7 @@
 .aboutus-container {
   text-align: center;
   margin-top: 20%;
-  margin-bottom: 10%;
+  margin-bottom: 50px;
 }
 
 .aboutus-container h1 {
@@ -51,7 +51,9 @@
 
 .aboutus-text {
   color: black;
-  padding: 40px 40px;
+  padding: 40px 80px;
+  margin-top: 20px;
+  font-family: "Tilt Neon", cursive;
 }
 
 /* exchnages and returns */
@@ -80,7 +82,7 @@
   border-radius: 20px;
   padding: 20px 20px;
   margin-top: 40px;
-  margin-bottom: 10%;
+  /* margin-bottom: 10%; */
   display: flex;
   height: 100%;
 }
@@ -89,6 +91,17 @@
   margin: 10% auto;
   width: 80%;
   font-weight: bold;
+}
+
+.exch-returns-content {
+  height: 100%;
+  margin-top: 15%;
+  margin-bottom: 40px;
+}
+
+.exch-returns-content p {
+  font-family: "Tilt Neon", cursive;
+  font-size: 25px;
 }
 
 .form-header {
@@ -120,10 +133,13 @@
 .homepage-button {
   margin-top: 20px;
   margin-right: 90%;
+  background-color: #6b011f;
+  border: none;
 }
 
 .contact-success-title {
   color: white;
+  font-family: "Tilt Neon", cursive;
   margin: auto auto;
   width: 100%;
 }
@@ -143,6 +159,15 @@
 .mailman-truck {
   width: 20%;
   height: 30%;
+}
+
+.warranty-content {
+  margin-top: 15%;
+}
+
+.warranty-content p {
+  font-family: "Tilt Neon", cursive;
+  font-size: 30px;
 }
 
 @media (max-width: 992px) {
@@ -235,14 +260,23 @@
     border-radius: 20px;
     padding: 20px 20px;
     margin-top: 40px;
-    margin-bottom: 10%;
     display: flex;
     height: 100%;
   }
 
   .exchform-content {
-    margin: auto auto;
     width: 80%;
+  }
+
+  .exch-returns-content {
+    height: 100%;
+    margin-top: 30%;
+    margin-bottom: 20px;
+  }
+
+  .exch-returns-content p {
+    font-family: "Tilt Neon", cursive;
+    font-size: 20px;
   }
 
   .form-header {
@@ -275,11 +309,12 @@
   .homepage-button {
     margin-top: 30px;
     margin-right: 60%;
-    background-color: gray;
+    background-color: #6b011f;
     border: none;
   }
 
   .contact-success-title {
+    font-family: "Tilt Neon", cursive;
     color: white;
     margin: auto auto;
     display: flex;
@@ -297,5 +332,14 @@
 
   .mailman-truck {
     width: 40%;
+  }
+
+  .warranty-content {
+    margin-top: 30%;
+  }
+
+  .warranty-content p {
+    font-family: "Tilt Neon", cursive;
+    font-size: 15px;
   }
 }

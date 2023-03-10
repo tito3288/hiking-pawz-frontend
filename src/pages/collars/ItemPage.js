@@ -1,8 +1,8 @@
 import React from "react";
-import ItemComp from "../components/ItemComp";
-import FooterPage from "../components/FooterPage";
-import { productArray } from "../productArray";
-import NavbarComp from "../components/NavbarComp";
+import ItemComp from "../../components/ItemComp";
+import FooterPage from "../../components/FooterPage";
+import { productArray } from "../../productArray";
+import NavbarComp from "../../components/NavbarComp";
 import { motion } from "framer-motion";
 
 const ItemPage = () => {
@@ -20,8 +20,7 @@ const ItemPage = () => {
       }}
       style={{
         backgroundColor: "#121212",
-        backgroundImage:
-          "url(https://www.transparenttextures.com/patterns/dark-leather.png)",
+        backgroundImage: "url(dark-leather.png)",
         height: "100%",
       }}
     >

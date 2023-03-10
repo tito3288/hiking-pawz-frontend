@@ -22,16 +22,15 @@ const LandingPage = () => {
       <div
         style={{
           backgroundColor: "#121212",
-          backgroundImage:
-            "url(https://www.transparenttextures.com/patterns/cartographer.png)",
+          backgroundImage: "url(hiking-background.png)",
         }}
       >
         <NavbarComp />
-        {/* <CarouselComp /> */}
-        <Video />
+        <CarouselComp />
         <MissionCom />
         <ProductDesc />
         <ProductComp />
+        <Video />
         <SubscriptionComp />
         <FooterPage />
       </div>

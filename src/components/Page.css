@@ -8,20 +8,21 @@
   overflow: hidden;
 }
 
-.card {
-  border: solid 1px #121212;
-}
-
 .card-collar-title {
   font-family: "Amatic SC", cursive;
   font-size: 35px;
+  color: wheat;
 }
 
 .card-collar-price {
   font-size: 20px;
+  color: wheat;
+  font-family: "Tilt Neon", cursive;
+  font-size: 25px;
 }
 
 .video {
+  border-radius: 10px;
   width: 100%;
   margin-top: 8%;
 }
@@ -54,7 +55,7 @@
 }
 
 .mission-image1 {
-  margin: auto 10%;
+  margin: 8% 10%;
   width: 80%;
   padding: 20px 20px;
   border-radius: 40px;
@@ -62,7 +63,7 @@
 
 .mission-image2 {
   margin: auto 10%;
-  width: 60%;
+  width: 80%;
   border-radius: 20px;
 }
 
@@ -79,6 +80,11 @@
 .missionDesMaroon h1 {
   font-family: "Amatic SC", cursive;
   font-size: 50px;
+}
+
+.missionDesMaroon p {
+  font-family: "Tilt Neon", cursive;
+  font-size: 20px;
 }
 
 .logo-outline {
@@ -119,6 +125,7 @@
 
 .home-link {
   border-radius: 10px;
+  font-weight: bold;
   box-shadow: 5px 10px 5px rgb(0, 0, 0, 0.5);
   color: #6b011f;
   padding: 8px 8px;
@@ -130,22 +137,24 @@
   background-color: #121212;
 }
 
+.navbar-links {
+  margin-left: 10px;
+}
+
 .item-page-outline {
   width: 100%;
   height: 100%;
   margin-top: 20%;
   margin-bottom: 10%;
-  background-color: #171717;
   border-radius: 20px;
-  background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");
   box-shadow: -8px -10px 15px rgb(255, 255, 255, 0),
     15px 15px 15px rgb(0, 0, 0, 0.1), inset -5px -5px 5px rgb(0, 0, 0, 0.4),
     inset 5px 5px 5px rgb(0, 0, 0, 0.4);
 }
 
 .item-page-outline li {
-  font-family: "Amatic SC", cursive;
   font-size: 20px;
+  font-family: "Tilt Neon", cursive;
 }
 
 .item-page-border-right {
@@ -154,7 +163,7 @@
 
 .item-image {
   width: 80%;
-  margin-top: 23%;
+  margin-top: 30%;
   margin-left: 10%;
   box-shadow: -1px 0px 25px rgb(0, 0, 0, 0.8);
 }
@@ -186,22 +195,39 @@
 
 .collar-title {
   font-family: "Amatic SC", cursive;
+  font-size: 60px;
+  color: white;
 }
 
 .price-title {
-  font-family: "Kosugi Maru", sans-serif;
+  font-family: "Tilt Neon", cursive;
+  font-size: 25px;
+  color: white;
 }
 
 .shipping-title {
   font-size: 15px;
+  color: white;
 }
 
 .size-title {
-  font-family: "Kosugi Maru", sans-serif;
+  color: white;
+  font-family: "Tilt Neon", cursive;
 }
 
 .quantity-title {
-  font-family: "Kosugi Maru", sans-serif;
+  color: white;
+  font-family: "Tilt Neon", cursive;
+}
+
+.checkout-size-title {
+  font-family: "Amatic SC", cursive;
+  font-size: 35px;
+  color: white;
+}
+
+.item-row li {
+  color: white;
 }
 
 .productDescriptionSection-img {
@@ -219,7 +245,6 @@
   width: 600px;
   height: 500px;
   height: 100%;
-  /* display: flex; */
   margin-left: 50%;
   margin-top: 30px;
   border-radius: 20px;
@@ -228,6 +253,11 @@
 .productDescriptionSection2 h1 {
   font-family: "Amatic SC", cursive;
   font-size: 50px;
+}
+
+.productDescriptionSection2 p {
+  font-family: "Tilt Neon", cursive;
+  font-size: 20px;
 }
 
 .subscription {
@@ -241,7 +271,18 @@
     15px 15px 15px rgb(0, 0, 0, 0.1),
     inset -1px -5px 5px rgb(255, 255, 255, 0.1),
     inset 5px 5px 5px rgb(0, 0, 0, 0.5);
-  background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+}
+
+.subscription2 {
+  width: 1000px;
+  height: 500px;
+  background-color: #171717;
+  margin: 10% auto;
+  border-radius: 30px;
+  box-shadow: -8px -10px 15px rgb(255, 255, 255, 0),
+    15px 15px 15px rgb(0, 0, 0, 0.1),
+    inset -1px -5px 5px rgb(255, 255, 255, 0.1),
+    inset 5px 5px 5px rgb(0, 0, 0, 0.5);
 }
 
 .subscription p {
@@ -255,9 +296,13 @@
 
 .subscription-email-title {
   font-size: 30px;
+  font-family: "Tilt Neon", cursive;
 }
 
 .subscription-submit-btn {
+  font-family: "Tilt Neon", cursive;
+  color: white;
+  font-size: 20px;
   margin-top: 20px;
   width: 50%;
 }
@@ -292,9 +337,26 @@
 .footer-policies {
   margin-left: 2%;
   padding-top: 50px;
-  color: white;
+  color: #6b011f;
   width: 100%;
   margin-bottom: 30px;
+}
+
+.success-subs-dog {
+  width: 600px;
+  margin-top: 30px;
+}
+
+.success-subs-title {
+  color: white;
+  font-family: "Tilt Neon", cursive;
+}
+
+.subs-homepage-btn {
+  margin-top: 30px;
+  margin-right: 90%;
+  background-color: #6b011f;
+  border: none;
 }
 
 /* THESE LAYOUT CSS ARE FOR TABLET USERS BUT IT ALSO APPLYS TO MOBILE USERS SINVE WE DID NOT CREATE A LAYOUT OF MAX-WIDTH: 600PX AT THE VERY END    */
@@ -320,11 +382,14 @@
 
   .card-collar-price {
     font-size: 15px;
+    font-family: "Tilt Neon", cursive;
+    font-size: 18px;
   }
 
   .video {
+    border-radius: 10px;
     width: 100%;
-    margin-top: 30%;
+    margin-top: 10%;
   }
 
   .carousel-section {
@@ -368,6 +433,11 @@
     box-shadow: none;
   }
 
+  .navbar-links {
+    margin-left: -10px;
+    margin-bottom: 10px;
+  }
+
   .logo-outline {
     width: 80px;
     height: 80px;
@@ -391,20 +461,19 @@
     width: 100%;
     height: 100%;
     margin-bottom: 10%;
-    background-color: #171717;
     margin-top: 40%;
     border-radius: 20px;
-    background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");
     box-shadow: -8px -10px 15px rgb(255, 255, 255, 0),
       15px 15px 15px rgb(0, 0, 0, 0.1), inset -5px -5px 5px rgb(0, 0, 0, 0.4),
       inset 5px 5px 5px rgb(0, 0, 0, 0.4);
-    /* box-shadow: inset -5px -5px 5px rgb(0, 0, 0, 0.2),
-      inset 5px 5px 5px rgb(0, 0, 0, 0.2); */
   }
 
   .item-page-outline li {
-    font-family: "Amatic SC", cursive;
     font-size: 15px;
+  }
+
+  .item-page-border-right {
+    border-right: none;
   }
 
   .item-row {
@@ -414,7 +483,7 @@
   .item-image {
     width: 80%;
     margin-top: 40px;
-    margin-right: 6%;
+    margin-right: 10%;
     box-shadow: -1px 0px 25px rgb(0, 0, 0, 0.8);
   }
 
@@ -441,13 +510,18 @@
     border-left: solid 1px black;
   }
 
-  .collar-title {
+  .checkout-size-title {
+    font-family: "Amatic SC", cursive;
     font-size: 30px;
+  }
+
+  .collar-title {
+    font-size: 40px;
     font-family: "Amatic SC", cursive;
   }
 
   .price-title {
-    font-size: 25px;
+    font-size: 20px;
     font-family: "Kosugi Maru", sans-serif;
   }
 
@@ -511,6 +585,10 @@
     font-size: 40px;
   }
 
+  .missionDesMaroon p {
+    font-size: 15px;
+  }
+
   .productDescriptionSection-img {
     margin: auto auto;
     width: 60%;
@@ -536,6 +614,10 @@
     font-size: 40px;
   }
 
+  .productDescriptionSection2 p {
+    font-size: 15px;
+  }
+
   .subscription {
     text-align: center;
     width: 90%;
@@ -549,7 +631,7 @@
       15px 15px 15px rgb(0, 0, 0, 0.1),
       inset -1px -5px 5px rgb(255, 255, 255, 0.1),
       inset 5px 5px 5px rgb(0, 0, 0, 0.5);
-    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+    background-image: "url(black-felt.png)";
   }
 
   .subscription p {
@@ -565,7 +647,9 @@
   }
 
   .subscription-submit-btn {
+    color: white;
     width: 100%;
+    font-size: 15px;
     margin-bottom: 20px;
     margin-top: -5px;
   }
@@ -600,11 +684,28 @@
     /* display: flex; */
     margin-left: 3%;
     margin-top: -30px;
-    color: white;
+    color: #6b011f;
     font-size: 10px;
     display: inline-block;
     width: 100%;
     /* margin-top: 5%; */
+  }
+
+  .success-subs-dog {
+    width: 300px;
+    margin-top: 30px;
+  }
+
+  .success-subs-title {
+    color: white;
+    font-size: 30px;
+  }
+
+  .subs-homepage-btn {
+    margin-right: 60%;
+    margin-top: 30px;
+    background-color: #6b011f;
+    border: none;
   }
 }
 

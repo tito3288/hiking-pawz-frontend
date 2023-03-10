@@ -22,15 +22,13 @@ const CardComp = (props) => {
         className="card"
         style={{
           boxShadow: "9px 8px 10px rgba(0,0,0,0.5",
-          // border: "solid #121212 5px",
-          borderRadius: "20px",
-          // padding: "3px 3px",
+          borderRadius: "10px",
         }}
         bg={secondary.toLocaleLowerCase()}
         text={white.toLocaleLowerCase()}
       >
         <Link to={props.page}>
-          <Card.Img src={props.img} style={{ borderRadius: "20px" }} />
+          <Card.Img src={props.img} style={{}} />
         </Link>
         <Card.Body>
           <Card.Title className="card-collar-title">{props.title}</Card.Title>

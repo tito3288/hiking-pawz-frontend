@@ -21,13 +21,13 @@ const FooterPage = () => {
       <div className="footer-policies">
         <Link
           to="/Exchanges-Returns"
-          style={{ color: "white", textDecoration: "none" }}
+          style={{ color: "#6b011f", textDecoration: "none" }}
         >
-          <p style={{ marginBottom: "1px" }}>Exchanges and Returns</p>
+          <p style={{ marginBottom: "1px" }}>Exchanges and Returns Form</p>
         </Link>
         <Link
           to="/Contact-Us"
-          style={{ textDecoration: "none", color: "white" }}
+          style={{ textDecoration: "none", color: "#6b011f" }}
         >
           <p
             style={{
@@ -37,7 +37,11 @@ const FooterPage = () => {
             Contact
           </p>
         </Link>
-        <p style={{ marginBottom: "1px", color: "white" }}>Terms and Policys</p>
+        <Link to="/WarrantyPolicies">
+          <p style={{ marginBottom: "1px", color: "#6b011f" }}>
+            Warranty and <br /> Return Policy
+          </p>
+        </Link>
         <div style={{ marginTop: "5px" }}>
           <Link to="https://www.instagram.com/hikingpawz/">
             <InstagramIcon style={{ color: "white" }} />
