@@ -163,9 +163,10 @@
 
 .item-image {
   width: 80%;
-  margin-top: 30%;
   margin-left: 10%;
-  box-shadow: -1px 0px 25px rgb(0, 0, 0, 0.8);
+  /* margin-top: 30%;
+  margin-left: 10%; */
+  box-shadow: -1px 0px 35px rgb(0, 0, 0, 0.8);
 }
 
 .wrapper {
@@ -357,6 +358,34 @@
   margin-right: 90%;
   background-color: #6b011f;
   border: none;
+}
+
+.slider-contanier {
+  margin-top: 35%;
+  max-width: 100%;
+}
+
+/* THIS STYLES THE BULLETS LAYOUT */
+.slider-controler {
+  margin-top: 10%;
+}
+
+/* THESE ARE THE STYLES FOR THE BULLETS IN OUR IMAGE SLIDER */
+.slider-controler .slider-arrow::after {
+  /* content: ""; */
+  color: #6b011f;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background: white;
+  width: 15px;
+  height: 15px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #6b011f;
+  width: 15px;
+  height: 15px;
 }
 
 /* THESE LAYOUT CSS ARE FOR TABLET USERS BUT IT ALSO APPLYS TO MOBILE USERS SINVE WE DID NOT CREATE A LAYOUT OF MAX-WIDTH: 600PX AT THE VERY END    */
@@ -706,6 +735,33 @@
     margin-top: 30px;
     background-color: #6b011f;
     border: none;
+  }
+
+  /* THIS IS WHERE OUR STYLES FOR OUR SLIDER IMAGED BEGGIN */
+  .slider-contanier {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+
+  .slider-controler {
+    margin-top: 15%;
+  }
+
+  .slider-controler .slider-arrow::after {
+    /* content: ""; */
+    color: #6b011f;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet {
+    background: white;
+    width: 15px;
+    height: 15px;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet-active {
+    background: #6b011f;
+    width: 15px;
+    height: 15px;
   }
 }
 
