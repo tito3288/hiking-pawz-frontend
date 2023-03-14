@@ -1,5 +1,7 @@
 import React from "react";
-import { Carousel, Container } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import "./Page.css";
 
 function CarouselComp() {
@@ -9,38 +11,70 @@ function CarouselComp() {
         <Carousel.Item>
           <img
             className="d-block w-100 carousel"
-            src="carousel.jpeg"
+            src="terra-collar-carousel.jpg"
             alt="First slide"
           />
-          <Carousel.Caption>
-            <h3 style={{ marginBottom: "30%" }}>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          {/* CREATE STYLE IN CSS FILE */}
+          <Carousel.Caption className="carousel-caption">
+            <Link to="/Col7">
+              <motion.h3
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+                transition={{
+                  type: "spring",
+                  damping: 9,
+                }}
+                className="terra-carousel"
+              >
+                Terra Collar
+              </motion.h3>
+            </Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100 carousel"
-            src="carousel2.jpeg"
+            src="thor-carousel.jpg"
             alt="Second slide"
           />
 
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <Carousel.Caption className="carousel-caption">
+            <Link to="/ItemPage">
+              <motion.h3
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+                transition={{
+                  type: "spring",
+                  damping: 9,
+                }}
+                className="thor-carousel"
+              >
+                Flair Collar
+              </motion.h3>
+            </Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100 carousel"
-            src="lake-collar.jpg"
+            src="lake.jpg"
             alt="Third slide"
           />
 
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+          <Carousel.Caption className="carousel-caption-logo">
+            <motion.img
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
+              transition={{
+                type: "spring",
+                damping: 9,
+              }}
+              src="transparant-logo.png"
+              className="carousel-caption-image"
+            />
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

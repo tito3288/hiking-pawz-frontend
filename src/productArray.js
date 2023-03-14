@@ -1,7 +1,8 @@
 const productArray = [
   {
     id: "price_1Mb7rFL8hk1dUwiAIvZ3qZbV",
-    img: ["collar1.jpg", "collar2.jpg", "collar1.jpg"],
+    img: "collar1.jpg",
+    gallery: ["collar1.jpg", "collar2.jpg", "collar1.jpg"],
     title: "Flair Collar",
     price: 19.99,
     page: "ItemPage",
@@ -11,6 +12,7 @@ const productArray = [
   {
     id: "2",
     img: "collar2.jpg",
+    gallery: ["collar1.jpg", "collar2.jpg", "collar1.jpg"],
     title: "Picturesque Collar",
     price: 19.99,
     page: "Col2",
@@ -20,6 +22,7 @@ const productArray = [
   {
     id: "3",
     img: "collar3.jpg",
+    gallery: ["collar1.jpg", "collar2.jpg", "collar1.jpg"],
     title: "Blossom Collar",
     price: 19.99,
     page: "Col3",
@@ -29,6 +32,7 @@ const productArray = [
   {
     id: "4",
     img: "testCollar3.jpeg",
+    gallery: ["collar1.jpg", "collar2.jpg", "collar1.jpg"],
     title: "Atlas Collar",
     price: 19.99,
     page: "Col4",
@@ -38,6 +42,7 @@ const productArray = [
   {
     id: "5",
     img: "testCollar3.jpeg",
+    gallery: ["collar1.jpg", "collar2.jpg", "collar1.jpg"],
     title: "Vintage Collar",
     price: 19.99,
     page: "Col5",
@@ -47,6 +52,7 @@ const productArray = [
   {
     id: "6",
     img: "testCollar3.jpeg",
+    gallery: ["collar1.jpg", "collar2.jpg", "collar1.jpg"],
     title: "Tribal Collar",
     price: 19.99,
     page: "Col6",
@@ -56,6 +62,7 @@ const productArray = [
   {
     id: "7",
     img: "testCollar3.jpeg",
+    gallery: ["collar1.jpg", "collar2.jpg", "collar1.jpg"],
     title: "Terra Collar",
     price: 19.99,
     page: "Col7",
@@ -65,15 +72,17 @@ const productArray = [
   {
     id: "8",
     img: "testCollar3.jpeg",
+    gallery: ["collar1.jpg", "collar2.jpg", "collar1.jpg"],
     title: "Sunshine Collar",
     price: 19.99,
-    page: "Col",
+    page: "Col8",
     description:
       "Our Sunrise Collar is made with a bright yellow and beautiful patterns that can catch the attention of other furry friends. More furry friends equals more play dates!",
   },
   {
     id: "9",
     img: "testCollar3.jpeg",
+    gallery: ["collar1.jpg", "collar2.jpg", "collar1.jpg"],
     title: "Spring Collar",
     price: 19.99,
     page: "Col9",

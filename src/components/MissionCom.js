@@ -11,46 +11,32 @@ const MissionCom = () => {
           <div className="missionDesBackground">
             <img
               className="mission-image1"
-              src="https://newscdn2.weigelbroadcasting.com/kpTfu-1670280235-242945-blog-Humane-society-st-joseph-county.jpg"
+              src="rescue-repeat-logo.jpeg"
               alt="Image of human society "
             ></img>
             <img
               className="my-3 mission-image2"
-              src="https://www.gannett-cdn.com/presto/2021/08/20/NSBT/f7014ae3-1388-4aa2-9577-20e6f4a2dc1c-riverdog08202021_03.jpg"
+              src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/287636126_310571657955815_1893965043947604716_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=N-vfPuO1MT0AX9s5XG8&_nc_ht=scontent-ord5-2.xx&oh=00_AfBZGH81ft3Vc1onDM6lnaz1VPOVwO-h4hUwT-7pMyGTSg&oe=6412E05D"
               alt="another-humansociety-img"
             />
           </div>
         </Col>
         <Col className="mb-4">
           <div className="missionDesMaroon">
-            <h1>Our Mission</h1>
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.5 }}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est
-              laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est
-              laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </motion.p>
+            <div className="missionDesMaroon-content">
+              <h1>The Mission</h1>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1.5 }}
+              >
+                The safety of other animals is very important. With your
+                purchase, you get to help organizations like Rescue Release
+                Repeat who share the same values and also dedicate all their
+                resources and time to give domestic and wildlife a second chance
+                at life.
+              </motion.p>
+            </div>
           </div>
         </Col>
       </Row>

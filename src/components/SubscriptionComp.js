@@ -2,23 +2,19 @@ import React from "react";
 import { Button, Form, Container } from "react-bootstrap";
 import { motion, useAnimation } from "framer-motion";
 import { useForm, ValidationError } from "@formspree/react";
-import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 const SubscriptionComp = () => {
-  //this useState under was used to create onClick animation without the framer motion component useAnimation() ⬇️
-  // const [animate, animateFunc] = React.useState(false);
-
   //this is another way of creating an animation using framer motion instead of using react hooks we use *useAnimation()
   const control = useAnimation();
-  const navigate = useNavigate();
 
   const [state, handleSubmit] = useForm("mwkjbjzo");
   if (state.succeeded) {
-    navigate("/SuccessSubscription");
+    //THE REASON WE ARE USING NAVIGATE INSTEAD OF JUST A RETURN STATEMENT IS BECAUSE WE NEED TO SEND THE USER TO ANOTHER PAGE IF SUBSCRIPTION IS SUCCESSFUL, NOT RENDER THE SUBSSUCCES PAGE IN OUR LANDING PAGE.
+    return <Navigate replace to="/SuccessSubscription" />;
   }
 
   // const [email, setEmail] = React.useState("");
-
   // const handleClick = async () => {
   //   try {
   //     const response = await axios.post("http://localhost:4000/subscription", {

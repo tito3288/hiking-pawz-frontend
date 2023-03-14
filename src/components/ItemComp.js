@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import {
   Row,
   Col,
@@ -92,14 +92,14 @@ const ItemComp = (props) => {
                 <SwiperSlide>
                   <img
                     className="item-image"
-                    src={productData.img[0]}
+                    src={productData.gallery[0]}
                     alt="collar"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     className="item-image"
-                    src={productData.img[1]}
+                    src={productData.gallery[1]}
                     alt="collar"
                   />
                 </SwiperSlide>
@@ -124,8 +124,8 @@ const ItemComp = (props) => {
               <h5 className="checkout-size-title">Select Size At Checkout</h5>
 
               <ul>
-                <li>Large (1-inch Width 18-23-inch Length)</li>
-                <li>Medium (1-inch Width 12-18-inch Length)</li>
+                <li>Large (1-inch Width, 18-22-inch Length)</li>
+                <li>Medium (3/4-inch Width 12-17-inch Length)</li>
                 <li>Small (5/8-inch Width 8-15-Length)</li>
               </ul>
 

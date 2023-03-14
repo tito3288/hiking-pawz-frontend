@@ -35,7 +35,7 @@ const ProductDesc = () => {
               initial={{ scale: 0 }}
               whileInView={{ rotate: 360, scale: 1 }}
               viewport={{ once: true }}
-              //damping slows down the bouciness that the element comes witht the default  type "spring"
+              //damping slows down the bounciness that the element comes witht the default  type "spring"
               transition={{
                 type: "spring",
                 stiffness: 260,
@@ -43,15 +43,11 @@ const ProductDesc = () => {
               }}
               style={{ margin: "auto auto" }}
             >
-              We care about the environment as much as we care about our pets
-              like thousands of other pet owners, our collars webbing is made
-              out of recycled plastic bottle caps that also provides a very
-              comfortable feel, touch and are also very durable. Let's play a
-              part by saving the environment one paw at a time. Our treats are
-              made out of Organic roasted peanut flour which is not only healthy
-              for ourselves but for our pets as well. With every purchase you
-              will also help us add more sustainable products & accessories for
-              you and your furry friend 🐾🌍
+              Not only does our collars bring a new look to your furry friend,
+              they're also very soft and durable. Easy to wash and washer
+              friendly. It will be ruff to choose from our 9 options of
+              different colors and patterns, so you might want to consult your
+              pet before purchase 🐾
             </motion.p>
           </div>
         </Col>

@@ -17,6 +17,7 @@ import { AnimatePresence } from "framer-motion";
 import SuccessContact from "./SuccessContact";
 import SuccessSubscription from "./SuccessSubscription";
 import WarrantyPolicies from "../pages/WarrantyPolicies";
+import SubscriptionComp from "./SubscriptionComp";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -39,6 +40,7 @@ const AnimatedRoutes = () => {
         <Route path="WarrantyPolicies" element={<WarrantyPolicies />} />
         <Route path="SuccessContact" element={<SuccessContact />} />
         <Route path="SuccessSubscription" element={<SuccessSubscription />} />
+        <Route path="SubscriptionComp" element={<SubscriptionComp />} />
       </Routes>
     </AnimatePresence>
   );

@@ -8,17 +8,26 @@
   overflow: hidden;
 }
 
+.card {
+  border-radius: 20px;
+}
+
 .card-collar-title {
   font-family: "Amatic SC", cursive;
   font-size: 35px;
-  color: wheat;
+  color: white;
 }
 
 .card-collar-price {
   font-size: 20px;
-  color: wheat;
+  color: white;
   font-family: "Tilt Neon", cursive;
   font-size: 25px;
+}
+
+.card-image {
+  padding: 20px 20px;
+  border-radius: 40px;
 }
 
 .video {
@@ -29,15 +38,62 @@
 
 .carousel-section {
   display: flex;
+  justify-content: center;
 }
 
 .carousel-items {
-  margin-top: 0.1%;
+  margin-top: 8%;
 }
 
 .carousel {
-  height: 1000px;
+  height: 1010px;
+  width: 90%;
+  /* border-radius: 20px; */
+}
+
+.carousel-caption {
+  margin: 5% auto;
+  opacity: 0.8;
+}
+.carousel-caption-logo {
+  margin: 1% auto;
+  opacity: 0.7;
+}
+
+.carousel-caption-image {
   width: 100%;
+  height: 100%;
+}
+
+.terra-carousel {
+  border: solid wheat;
+  background-color: #3c2317;
+  width: 400px;
+  height: 100%;
+  margin: auto auto;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-size: 80px;
+  font-family: "Amatic SC", cursive;
+  color: wheat;
+}
+
+.thor-carousel {
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-width: 4px;
+  border-style: solid;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, red, yellow, green) border-box;
+  border: 4px solid transparent;
+  background-color: white;
+  width: 400px;
+  height: 100%;
+  margin: auto auto;
+
+  font-size: 80px;
+  font-family: "Amatic SC", cursive;
+  color: red;
 }
 
 .mission-container {
@@ -73,18 +129,22 @@
   width: 100%;
   text-align: center;
   padding: 30px 30px;
-  color: wheat;
+  color: white;
   border-radius: 30px;
+}
+
+.missionDesMaroon-content {
+  margin: 20% auto;
 }
 
 .missionDesMaroon h1 {
   font-family: "Amatic SC", cursive;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .missionDesMaroon p {
   font-family: "Tilt Neon", cursive;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .logo-outline {
@@ -240,7 +300,7 @@
 
 .productDescriptionSection2 {
   background-color: #171717;
-  color: wheat;
+  color: white;
   text-align: center;
   padding: 30px 30px;
   width: 600px;
@@ -253,12 +313,12 @@
 
 .productDescriptionSection2 h1 {
   font-family: "Amatic SC", cursive;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .productDescriptionSection2 p {
   font-family: "Tilt Neon", cursive;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .subscription {
@@ -415,6 +475,11 @@
     font-size: 18px;
   }
 
+  .card-image {
+    padding: 10px 10px;
+    border-radius: 20px;
+  }
+
   .video {
     border-radius: 10px;
     width: 100%;
@@ -431,6 +496,46 @@
 
   .carousel {
     height: 300px;
+    width: 100%;
+  }
+
+  .carousel-caption {
+    margin: 5% auto;
+  }
+
+  .carousel-caption-logo {
+    margin: 1% auto;
+    opacity: 1;
+  }
+
+  .terra-carousel {
+    border: solid wheat;
+    background-color: #3c2317;
+    width: 200px;
+    height: 100%;
+    margin: auto auto;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 35px;
+    font-family: "Amatic SC", cursive;
+    color: wheat;
+  }
+
+  .thor-carousel {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-width: 4px;
+    border-style: solid;
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(to right, red, yellow, green) border-box;
+    border: 4px solid transparent;
+    background-color: white;
+    width: 200px;
+    height: 100%;
+    margin: auto auto;
+    font-size: 35px;
+    font-family: "Amatic SC", cursive;
+    color: red;
   }
 
   .offcanvas {
@@ -592,7 +697,7 @@
   .mission-image1 {
     margin: auto auto;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 40px;
   }
 
   .mission-image2 {
@@ -603,11 +708,15 @@
   .missionDesMaroon {
     background-color: #6a0000;
     text-align: center;
-    color: wheat;
+    color: white;
     font-size: small;
     height: 100%;
     padding: 30px 30px;
     border-radius: 20px;
+  }
+
+  .missionDesMaroon-content {
+    margin: auto auto;
   }
 
   .missionDesMaroon h1 {
@@ -632,7 +741,7 @@
     width: 80%;
     height: 100%;
     padding: 20px 20px;
-    color: wheat;
+    color: white;
     margin-left: 17%;
     margin-top: 30px;
     border-radius: 20px;

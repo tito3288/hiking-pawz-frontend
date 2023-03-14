@@ -18,7 +18,7 @@ const SuccessSubscription = () => {
         textAlign: "center",
       }}
     >
-      <Confetti />
+      <Confetti style={{ height: "100%" }} />
       <Link to="/">
         <Button className="subs-homepage-btn">Home Page</Button>
       </Link>

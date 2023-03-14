@@ -30,25 +30,34 @@ const AboutUs = () => {
             About Us
           </h1>
           <img
-            src="about-us.jpg"
+            src="aboutus.jpg"
             alt="about-us"
             style={{ borderRadius: "20px" }}
             className="aboutus-img"
           />
           <h4 className="aboutus-text">
-            The safety of animals and the environment is our number one
-            priority. We have created collars that gives your pet not only a
-            unique look from any other collar but we've also integrated
-            sustainable materials into the webbing. Instead of using regular
-            nylon webbing, we make ours out of recycled plastic bottle caps
-            thats also creates a comfortable feel for your pet. Your purchase
-            helps reuse recycled materials for something as simple but yet
-            durable GUARANTEED. Everyone in the team is a Certified Food
-            Handlers as we care about the knowledge and regulations to making
-            the delicious Organic treats for you furry friends. We also donate
-            10% of each purchase to North Shore Animal League Organization the
-            biggest non kill rescue and adoption organization in the world here
-            in America.
+            We are a small family from South Bend Indiana. Currently we have 3
+            fur balls. A Pitbull mix named Peyton, who is the toughest big boi
+            we have but the sweetest/gentle one of them all. Our second one is
+            our Border Collie/Husky mix named Thor, If energy had an appearance,
+            it would be him. Always ready for an adventure even if I'm just
+            getting a glass of water at 3 am. Our third one is Churra aka
+            Churrina. Our Queen as we call her too, our little tuxedo cat she's
+            our newest member to the family. I'm a software engineer and my wife
+            is a social worker. We are the people that would cross a street to
+            just pet your fur ball, if that's also you, glad to meet you 👋 we
+            have a lot in common. Currently we are only a small business. We
+            created this brand to help pet refuge that are dedicated to help all
+            kinds of animals that need help, we've partnered with Rescue Release
+            Repeat to donate 50% of the revenue so they can continue with the
+            great work that they do taking care of animals that range from cats,
+            dogs, racoons, foxes, squirrels etc. Check them out on facebook!{" "}
+            <a href="https://www.facebook.com/RescueReleaseRepeat">
+              RescueReleaseRepeat
+            </a>
+            . The other 50% will help us fund new products like leashes,
+            harnesses, treats etc. On the merch side like T-shirts, Sweatshirts
+            and hats, so stay tuned for those 😁.
           </h4>
         </Stack>
       </Container>

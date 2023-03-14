@@ -48,23 +48,23 @@ const NavbarComp = () => {
       });
   };
 
-  const [click, clickFunc] = React.useState(false);
+  // const [click, clickFunc] = React.useState(false);
 
-  function handleClick() {
-    clickFunc(!click);
-  }
+  // function handleClick() {
+  //   clickFunc(!click);
+  // }
 
   //change the color while scrolling
 
-  const [color, colorFunc] = React.useState(false);
+  // const [color, colorFunc] = React.useState(false);
 
-  function changeColor() {
-    if (window.scrollY >= 90) {
-      colorFunc(true);
-    } else {
-      colorFunc(false);
-    }
-  }
+  // function changeColor() {
+  //   if (window.scrollY >= 90) {
+  //     colorFunc(true);
+  //   } else {
+  //     colorFunc(false);
+  //   }
+  // }
 
   window.addEventListener("scroll", scrollFunction);
 

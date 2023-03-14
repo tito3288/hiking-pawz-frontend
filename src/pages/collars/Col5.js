@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Col5 = () => {
   const product5 = productArray.find((value) => {
-    return value.id === "";
+    return value.id === "5";
   });
 
   return (
