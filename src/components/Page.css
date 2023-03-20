@@ -224,9 +224,15 @@
 .item-image {
   width: 80%;
   margin-left: 10%;
-  /* margin-top: 30%;
-  margin-left: 10%; */
-  box-shadow: -1px 0px 35px rgb(0, 0, 0, 0.8);
+  /* box-shadow: -1px 0px 35px rgb(0, 0, 0, 0.8); */
+}
+
+.swiperslide1 {
+  padding: 120px 38px;
+}
+
+.swiperslide2 {
+  padding: 1px 18px;
 }
 
 .wrapper {
@@ -420,8 +426,9 @@
   border: none;
 }
 
+/* THIS COTROLS THE LAYOUT OF BOTH SWIPER IMAGES */
 .slider-contanier {
-  margin-top: 35%;
+  margin-top: 20%;
   max-width: 100%;
 }
 
@@ -431,11 +438,6 @@
 }
 
 /* THESE ARE THE STYLES FOR THE BULLETS IN OUR IMAGE SLIDER */
-.slider-controler .slider-arrow::after {
-  /* content: ""; */
-  color: #6b011f;
-}
-
 .swiper-pagination .swiper-pagination-bullet {
   background: white;
   width: 15px;
@@ -472,7 +474,6 @@
   .card-collar-price {
     font-size: 15px;
     font-family: "Tilt Neon", cursive;
-    font-size: 18px;
   }
 
   .card-image {
@@ -504,7 +505,7 @@
   }
 
   .carousel-caption-logo {
-    margin: 1% auto;
+    margin: auto auto;
     opacity: 1;
   }
 
@@ -615,10 +616,19 @@
   }
 
   .item-image {
-    width: 80%;
+    width: 100%;
     margin-top: 40px;
-    margin-right: 10%;
-    box-shadow: -1px 0px 25px rgb(0, 0, 0, 0.8);
+    margin-left: 0;
+    /* box-shadow: -1px 0px 25px rgb(0, 0, 0, 0.8); */
+  }
+
+  .swiperslide1 {
+    padding: 45px 18px;
+  }
+
+  .swiperslide2 {
+    padding: 1px 38px;
+    margin-top: -40px;
   }
 
   .wrapper {
@@ -854,11 +864,6 @@
 
   .slider-controler {
     margin-top: 15%;
-  }
-
-  .slider-controler .slider-arrow::after {
-    /* content: ""; */
-    color: #6b011f;
   }
 
   .swiper-pagination .swiper-pagination-bullet {

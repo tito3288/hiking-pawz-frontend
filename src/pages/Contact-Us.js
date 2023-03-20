@@ -24,7 +24,7 @@ const ContactUs = () => {
       className="flex-wrapper"
       style={{
         backgroundColor: "#171717",
-        backgroundImage: "url(hiking-background.png)",
+        backgroundImage: "url(./backgrounds/hiking-background.png)",
       }}
     >
       <NavbarComp />

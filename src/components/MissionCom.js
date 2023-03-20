@@ -16,7 +16,7 @@ const MissionCom = () => {
             ></img>
             <img
               className="my-3 mission-image2"
-              src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/287636126_310571657955815_1893965043947604716_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=N-vfPuO1MT0AX9s5XG8&_nc_ht=scontent-ord5-2.xx&oh=00_AfBZGH81ft3Vc1onDM6lnaz1VPOVwO-h4hUwT-7pMyGTSg&oe=6412E05D"
+              src="rescue-release-image2.jpg"
               alt="another-humansociety-img"
             />
           </div>
@@ -30,11 +30,10 @@ const MissionCom = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.5 }}
               >
-                The safety of other animals is very important. With your
-                purchase, you get to help organizations like Rescue Release
-                Repeat who share the same values and also dedicate all their
-                resources and time to give domestic and wildlife a second chance
-                at life.
+                By making a purchase, you support organization with similar
+                values as you. Such as, Rescue Release Repeat, who actively
+                devote their resources and time to giving domestic and wildlife
+                a second chance at life.
               </motion.p>
             </div>
           </div>

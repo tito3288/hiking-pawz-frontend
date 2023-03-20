@@ -11,7 +11,7 @@ function CarouselComp() {
         <Carousel.Item>
           <img
             className="d-block w-100 carousel"
-            src="terra-collar-carousel.jpg"
+            src="./carousel/terra-collar-carousel.jpg"
             alt="First slide"
           />
           {/* CREATE STYLE IN CSS FILE */}
@@ -35,7 +35,7 @@ function CarouselComp() {
         <Carousel.Item>
           <img
             className="d-block w-100 carousel"
-            src="thor-carousel.jpg"
+            src="./carousel/thor-carousel.jpg"
             alt="Second slide"
           />
 
@@ -59,7 +59,7 @@ function CarouselComp() {
         <Carousel.Item>
           <img
             className="d-block w-100 carousel"
-            src="lake.jpg"
+            src="./carousel/lake.jpg"
             alt="Third slide"
           />
 

@@ -11,7 +11,7 @@ const SuccessSubscription = () => {
   return (
     <div
       style={{
-        backgroundImage: "url(contact-page-background.png",
+        backgroundImage: "url(./backgrounds/contact-page-background.png",
         backgroundSize: "cover",
         height: "100vh",
         width: "100%",
@@ -39,9 +39,9 @@ const SuccessSubscription = () => {
         >
           Thank you for subscribing!
           <br />
-          We've partnered up with _blank..... to keep you updated with the
-          thousands of pets that are being rescued and given a home thanks to
-          your purchase. Also updates with coming soon merchandise.
+          We'll keep you updated with animals that are rescued and given a home
+          thanks to your purchase, also with any new merch dates and sneak
+          peaks.
         </motion.h1>
       </Container>
     </div>

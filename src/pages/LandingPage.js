@@ -22,7 +22,7 @@ const LandingPage = () => {
       <div
         style={{
           backgroundColor: "#121212",
-          backgroundImage: "url(hiking-background.png)",
+          backgroundImage: "url(./backgrounds/hiking-background.png)",
         }}
       >
         <NavbarComp />

@@ -8,7 +8,7 @@ const SuccessContact = () => {
   return (
     <div
       style={{
-        backgroundImage: "url(contact-page-background.png)",
+        backgroundImage: "url(./backgrounds/contact-page-background.png)",
         backgroundSize: "cover",
         height: "100vh",
         widht: "100%",

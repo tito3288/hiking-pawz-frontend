@@ -61,7 +61,7 @@ const ItemComp = (props) => {
     <Container style={{ display: "flex" }}>
       <div
         style={{
-          backgroundImage: "url(dark-tire.png)",
+          backgroundImage: "url(./backgrounds/dark-tire.png)",
           backgroundColor: "#171717",
         }}
         className="item-page-outline"
@@ -85,18 +85,25 @@ const ItemComp = (props) => {
                 //THIS STYLE GIVES TRHE IMAGE MORE SPACE FOR THE SHADOWS
                 style={{
                   height: "100%",
-                  padding: "18px",
+                  padding: "16px",
                   position: "relative",
                 }}
               >
-                <SwiperSlide>
+                {/* THESE STYLES INSIDE SWIPERSLIDE IS WHERE WE CAN EDIT THE LAYOUT OF EACH IMAGE THATS BEING SLIDE MOVE THESE TO A CSS FILE*/}
+                <SwiperSlide
+                  className="swiperslide1"
+                  // style={{ padding: "1px 38px" }}
+                >
                   <img
                     className="item-image"
                     src={productData.gallery[0]}
                     alt="collar"
                   />
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide
+                  className="swiperslide2"
+                  style={{ padding: "1px 18px" }}
+                >
                   <img
                     className="item-image"
                     src={productData.gallery[1]}

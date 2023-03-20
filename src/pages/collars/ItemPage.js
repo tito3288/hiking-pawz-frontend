@@ -20,7 +20,7 @@ const ItemPage = () => {
       }}
       style={{
         backgroundColor: "#121212",
-        backgroundImage: "url(dark-leather.png)",
+        backgroundImage: "url(./backgrounds/dark-leather.png)",
         height: "100%",
       }}
     >

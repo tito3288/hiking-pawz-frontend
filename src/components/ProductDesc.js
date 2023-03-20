@@ -43,11 +43,10 @@ const ProductDesc = () => {
               }}
               style={{ margin: "auto auto" }}
             >
-              Not only does our collars bring a new look to your furry friend,
-              they're also very soft and durable. Easy to wash and washer
-              friendly. It will be ruff to choose from our 9 options of
-              different colors and patterns, so you might want to consult your
-              pet before purchase 🐾
+              Not only do our collars bring a new look to your furry friend.
+              They are soft, durable, easy to wash, and washer friendly. It will
+              be ruff to choose from our 9 options of different colors and
+              patterns, so you might want to consult your pet before purchase 🐾
             </motion.p>
           </div>
         </Col>
