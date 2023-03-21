@@ -17,7 +17,7 @@ const productArray = [
     price: 19.99,
     page: "Col2",
     description:
-      "Our Picturesque Collar looks very attractive in any fur tone or lenght. With these awesome and fun colors, you might want to get two, or one, or just tell a friend, either way we love you and your pooch ♥️",
+      "Our Scenic Collar looks very attractive in any fur tone or lenght. With these awesome and fun colors, you might want to get two, or one, or just tell a friend, either way we love you and your pooch ♥️",
   },
   {
     id: "price_1MlNn1L8hk1dUwiALHRExa94",

@@ -9,7 +9,7 @@ const Video = () => {
         <video
           className="video"
           src="/videos/shorter-hiking-video2.mp4"
-          autoPlay
+          // autoPlay
           // onCanPlay={this.onCanPlay()}
           controls="controls"
           preload="auto"
