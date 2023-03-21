@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const ItemPage = () => {
   const product1 = productArray.find(
-    (value) => value.id === "price_1Mb7rFL8hk1dUwiAIvZ3qZbV"
+    (value) => value.id === "price_1MlNlwL8hk1dUwiAbNSMfmDn"
   );
 
   return (

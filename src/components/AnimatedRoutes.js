@@ -18,6 +18,8 @@ import SuccessContact from "./SuccessContact";
 import SuccessSubscription from "./SuccessSubscription";
 import WarrantyPolicies from "../pages/WarrantyPolicies";
 import SubscriptionComp from "./SubscriptionComp";
+import Success from "./Success";
+import Cancel from "./Cancel";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -41,6 +43,8 @@ const AnimatedRoutes = () => {
         <Route path="SuccessContact" element={<SuccessContact />} />
         <Route path="SuccessSubscription" element={<SuccessSubscription />} />
         <Route path="SubscriptionComp" element={<SubscriptionComp />} />
+        <Route path="/Success" element={<Success />} />
+        <Route path="/Cancel" element={<Cancel />} />
       </Routes>
     </AnimatePresence>
   );

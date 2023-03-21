@@ -48,24 +48,6 @@ const NavbarComp = () => {
       });
   };
 
-  // const [click, clickFunc] = React.useState(false);
-
-  // function handleClick() {
-  //   clickFunc(!click);
-  // }
-
-  //change the color while scrolling
-
-  // const [color, colorFunc] = React.useState(false);
-
-  // function changeColor() {
-  //   if (window.scrollY >= 90) {
-  //     colorFunc(true);
-  //   } else {
-  //     colorFunc(false);
-  //   }
-  // }
-
   window.addEventListener("scroll", scrollFunction);
 
   window.onscroll = function () {
