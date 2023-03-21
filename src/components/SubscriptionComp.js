@@ -37,7 +37,7 @@ const SubscriptionComp = () => {
     <Container>
       <div
         className="subscription"
-        style={{ backgroundImage: "url(black-felt.png)" }}
+        style={{ backgroundImage: "url(./backgrounds/black-felt.png)" }}
       >
         <Form
           onSubmit={handleSubmit}

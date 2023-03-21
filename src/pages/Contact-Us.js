@@ -30,7 +30,7 @@ const ContactUs = () => {
       <NavbarComp />
       <Container style={{ display: "flex" }}>
         <div
-          style={{ backgroundImage: "url(black-felt.png)" }}
+          style={{ backgroundImage: "url(./backgrounds/black-felt.png)" }}
           className="subscription contact-page"
         >
           <Form onSubmit={handleSubmit} className="contactpage-content">
