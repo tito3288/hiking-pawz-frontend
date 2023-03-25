@@ -32,8 +32,8 @@ const MissionCom = () => {
               >
                 By making a purchase, you support organization with similar
                 values as you. Such as, Rescue Release Repeat, who actively
-                devote their resources and time to giving domestic and wildlife
-                a second chance at life.
+                devote their resources and time to giving domestic, exotic and
+                wild animals a second chance at life.
               </motion.p>
             </div>
           </div>
