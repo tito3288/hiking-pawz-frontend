@@ -6,6 +6,7 @@ import "../Links.css";
 import { motion } from "framer-motion";
 import { useForm, ValidationError } from "@formspree/react";
 import SuccessContact from "../components/SuccessContact";
+import ScrollToTop from "../components/ScrollToTop";
 
 const ContactUs = () => {
   const [state, handleSubmit] = useForm("mjvdrkdj");
@@ -27,6 +28,7 @@ const ContactUs = () => {
         backgroundImage: "url(./backgrounds/hiking-background.png)",
       }}
     >
+      <ScrollToTop />
       <NavbarComp />
       <Container style={{ display: "flex" }}>
         <div

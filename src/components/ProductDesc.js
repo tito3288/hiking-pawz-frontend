@@ -2,7 +2,6 @@ import React from "react";
 import "./Page.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
-import { style } from "@mui/system";
 
 const ProductDesc = () => {
   return (

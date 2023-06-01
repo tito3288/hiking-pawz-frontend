@@ -3,10 +3,12 @@ import { Container } from "react-bootstrap";
 import "../Links.css";
 import { Link } from "react-router-dom";
 import NavbarComp from "../components/NavbarComp";
+import ScrollToTop from "../components/ScrollToTop";
 
 const WarrantyPolicies = () => {
   return (
     <div>
+      <ScrollToTop />
       <NavbarComp />
       <Container style={{ display: "flex" }}>
         <div className="warranty-content">

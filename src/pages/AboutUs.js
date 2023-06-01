@@ -4,6 +4,7 @@ import FooterPage from "../components/FooterPage";
 import { Stack, Container } from "react-bootstrap";
 import "../Links.css";
 import { motion } from "framer-motion";
+import ScrollToTop from "../components/ScrollToTop";
 
 const AboutUs = () => {
   //Move all of the styling on the css page
@@ -17,8 +18,8 @@ const AboutUs = () => {
         transition: { duration: 0.1 },
       }}
     >
+      <ScrollToTop />
       <NavbarComp />
-
       <Container style={{ display: "flex", backgroundColor: "#F9F9F9" }}>
         <Stack className="aboutus-container">
           <h1

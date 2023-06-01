@@ -4,6 +4,7 @@ import FooterPage from "../../components/FooterPage";
 import { productArray } from "../../productArray";
 import NavbarComp from "../../components/NavbarComp";
 import { motion } from "framer-motion";
+import ScrollToTop from "../../components/ScrollToTop";
 
 const ItemPage = () => {
   const product1 = productArray.find(
@@ -24,6 +25,7 @@ const ItemPage = () => {
         height: "100%",
       }}
     >
+      <ScrollToTop />
       <NavbarComp />
       <ItemComp id={product1.id} />
       <FooterPage></FooterPage>
